@@ -13,12 +13,12 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-size: 1.6rem;
     font-family: ${({ theme }) => theme.font.family.default};
-    /* font-family: 'Montserrat', sans-serif; */
+    color: ${({ theme }) => theme.colors.darkText}
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${({ theme }) => theme.font.family.secondary};
+    font-family: ${({ theme }) => theme.font.family.default};
     margin: ${({ theme }) => theme.spacing.large} 0;
-    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 800;
   }
   p {
     margin: ${({ theme }) => theme.spacing.medium} 0;
@@ -28,6 +28,6 @@ export const GlobalStyles = createGlobalStyle`
     padding: ${({ theme }) => theme.spacing.medium};
   }
   a {
-    color: ${({ theme }) => theme.colors.secondaryColor};
+    color: ${({ theme }) => theme.colors.secondary};
   }
 `;
