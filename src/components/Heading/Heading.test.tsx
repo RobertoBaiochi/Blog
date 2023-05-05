@@ -4,6 +4,7 @@ import Heading from '.';
 import { renderTheme } from '../../styles/render-theme';
 import { theme } from '../../styles/theme';
 import '@testing-library/jest-dom';
+import 'jest-styled-components';
 
 describe('<Heading />', () => {
   it('should render with default values', () => {
@@ -66,11 +67,11 @@ describe('<Heading />', () => {
   });
 
   it('should render correct font-size when using mobile', () => {
-    renderTheme(<Heading size={'small'}>texto</Heading>);
+    renderTheme(<Heading size={'huge'}>texto</Heading>);
 
     expect(screen.getByRole('heading', { name: 'texto' })).toHaveStyleRule(
       'font-size',
-      theme.font.sizes.medium,
+      theme.font.sizes.xlarge,
       { media: theme.media.lteMedium },
     );
   });

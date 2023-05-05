@@ -32,7 +32,7 @@ describe('<MenuLink />', () => {
     );
     expect(container.firstChild).toMatchInlineSnapshot(`
       <a
-        class="sc-7a19df7b-0 haKSHQ"
+        class="sc-6d3caf5b-0 gZhbvo"
         href="http://localhost"
         target="_self"
       >

@@ -5,8 +5,9 @@ exports[`<LogoLink /> should match snapshot 1`] = `
   class="sc-45008c58-0 gNsfKs"
 >
   <a
-    class="sc-f70c97a8-0 cAfBFi"
+    class="sc-c265ee56-0 eWKpRN"
     href="#target"
+    target="_self"
   >
     <img
       alt="Olá Mundo"
