@@ -5,64 +5,68 @@
         "id": "1",
         "attributes": {
           "blogName": "Console.Blog",
-          "blogDescription": "Debuggando até ponto e vírgula do JavaScript",
+          "blogDescription": "Debuggando passo a passo do conhecimento",
           "logo": {
             "data": {
               "id": "8",
               "attributes": {
-                "alternativeText": "Borat o maior humorista de todos os tempos",
-                "url": "/uploads/image3_8f8c0f004b.jpg"
+                "alternativeText": "Roberto Baiochi",
+                "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
               }
             }
           },
           "menuLink": [
             {
               "id": "1",
-              "link": "#teste1",
-              "text": "teste1",
-              "newTab": true
+              "link": "#link1",
+              "text": "Link1",
+              "newTab": false
             },
             {
               "id": "2",
-              "link": "#teste2",
-              "text": "teste2",
-              "newTab": true
+              "link": "#link2",
+              "text": "Link2",
+              "newTab": false
             },
             {
               "id": "3",
-              "link": "#teste3",
-              "text": "teste3",
-              "newTab": true
+              "link": "#link3",
+              "text": "Link3",
+              "newTab": false
             }
           ],
-          "footer": "Desenvolvido por Roberto Baiochi"
+          "footer": "<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://robertobaiochi.com.br\">Desenvolvido e criado por Roberto Baiochi</a></p>"
         }
       }
     },
     "posts": {
       "data": [
         {
-          "id": "1",
+          "id": "2",
           "attributes": {
-            "title": "How to learn React as a Library or Framework [2023]",
-            "slug": "how-to-learn-react-as-a-library-or-framework-2023",
-            "excerpt": "Learning React in 2023 is not the easiest endeavour. While we had lots of stability since the release of React Hooks in 2019, the tide is turning again. And it may be a more volatile shift than it has been with React Hooks. In this article, I want to compare the two angles on how to learn React in 2023: the library way and the framework way.",
-            "content": "<p>To put things into context: The new React documentation has been released and does recommend React to be used in a fully integrated framework. The documentation advocates using a (meta) framework (e.g. Next.js) instead of using React as a library (or framework - however you like to call it) in a bundler like Vite or Parcel. My take on this was easing the shift a bit by still recommending other React starters apart from a fully-integrated React framework before frameworks become the actual default eventually.&nbsp;</p><h4>\"WE HAVE COME FULL CIRCLE ...\"&nbsp;</h4><p>Who does not know this tech phrase coming from senior developers who are mocking the inevitable change on the horizon? Yes, we create, we learn, we adapt. That's how it has always been - it's the nature of the feedback loop. Developers tell the same about the current state of web development: We have implemented web applications as server-side applications (SSR - server-side rendering/server-side routing) in PHP, Java, C#, and later Ruby on Rails from roughly 2000 - 2010. All of them sprinkled more and more JavaScript (e.g. jQuery, MooTools, Dojo) into the mix for the improved client-side UX. In 2010, the tide shifted in favor of client-side applications (CSR - client-side rendering/client-side routing) under the umbrella term single-page applications (SPAs) which came as full blown JavaScript solutions. - first generation: Backbone, Knockout, Ember, Angular - second generation: React, Vue - in-between generations: Svelte - third generation: Solid, Qwik These days many are calling SPAs as an error in the history of web development. However, SPAs have their place and SPAs had to become a thing for JavaScript (and later TypeScript) taking off as web application frameworks and for coming to the conclusion of bringing JavaScript/TypeScript for SSR to the server, because the underlying tech (e.g. missing HTTP streaming) prevented us previously (thus far) from implementing it.</p><h3>REACT ON THE SERVER&nbsp;</h3><p>Anyway, this state of web applications as SPAs reigned roughly for 10 years ... &gt;Continue Reading: History of Web Applications The circle closes now, because we are going back to SSR with React and many other frameworks; each of them (Vue, Svelte, Solid, Qwik, Angular) influencing another. While many none native JavaScript developers are mocking this transition as \"just going back to how it has always been\" (see 2000 - 2010) or \"JavaScript is inventing PHP\", they miss all the improvements (e.g. performance with partial/selective hydrations, server-side components as an architectural pattern, resumability) compared to the previous circle. It's JavaScript (better: TypeScript) as first-class citizen for SSR web applications. It will be the next decade of how we implement web applications ... ... before AI takes over (tongue in cheek).&nbsp;</p><p><img src=\"/uploads/caio_silva_b1_BK_Bsi_JGI_unsplash_d195378ef2.jpg\" alt=\"cidade na beira da praia com prédios ao final da tarde\"></p><p>&nbsp;But enough rambling about why this will be the inevitable next stage of web development. Let's speak React and how to learn it in these turbulent waters.</p>",
+            "title": "Como criar um aplicativo React com suporte a internacionalização (i18n)",
+            "slug": "como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n",
+            "content": "<p>A internacionalização (i18n) é um recurso importante em aplicativos modernos, especialmente aqueles com público global.</p><p>Ao adicionar suporte a i18n, você permite que seus usuários alterem o idioma do aplicativo de acordo com suas preferências e necessidades.</p><p>Neste artigo, mostraremos como criar um aplicativo React com suporte a i18n usando a biblioteca i18next.</p><h2><strong>Instalação e configuração</strong></h2><p>Começamos instalando o pacote i18next e suas dependências:</p><pre><code class=\"language-plaintext\">npm install i18next react-i18next i18next-browser-languagedetector</code></pre><p>Em seguida, configuramos o i18next em nosso aplicativo. Podemos criar um arquivo <strong>i18n.js</strong> na raiz do projeto com a seguinte configuração:</p><pre><code class=\"language-plaintext\">import i18n from \"i18next\";\nimport LanguageDetector from \"i18next-browser-languagedetector\";\nimport { initReactI18next } from \"react-i18next\";\n\ni18n\n  .use(LanguageDetector)\n  .use(initReactI18next)\n  .init({\n    fallbackLng: \"en\",\n    debug: true,\n    interpolation: {\n      escapeValue: false, // not needed for react as it escapes by default\n    },\n  });\n\nexport default i18n;</code></pre><p>Aqui, estamos inicializando o i18next com um detector de idioma baseado no navegador.</p><p>Também estamos definindo um idioma padrão (\"en\") para usar caso o idioma do usuário não possa ser detectado.</p><h2><strong>Criando arquivos de tradução</strong></h2><p>Agora que o i18next está configurado, podemos criar nossos arquivos de tradução.</p><p>Podemos criar uma pasta <strong>locales</strong> na raiz do projeto para armazenar os arquivos de tradução. Por exemplo, podemos ter arquivos como <strong>en.json</strong> e <strong>pt-BR.json</strong> na pasta <strong>locales</strong>.</p><p>Um arquivo de tradução típico pode ser assim:</p><pre><code class=\"language-plaintext\">{\n  \t\t\"greeting\": \"Hello, {{name}}!\",\n  \t\t\"welcome\": \"Welcome to my app.\",\n  \t\t\"button\": {\n    \t\t\"submit\": \"Submit\",\n    \t\t\"cancel\": \"Cancel\"\n  \t\t}\n}</code></pre><p>Aqui, estamos definindo algumas mensagens de texto com placeholders (<strong>{{name}}</strong>) e também uma mensagem aninhada (<strong>button.submit</strong>).</p><p>&nbsp;</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607748/casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg\" alt=\"casey-horner-9XRpNnTqdJE-unsplash.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607746/thumbnail_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 234w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/small_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/medium_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/large_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure>",
+            "excerpt": "Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.",
             "allowComments": true,
             "tags": {
               "data": [
                 {
-                  "id": "5",
+                  "id": "1",
                   "attributes": {
-                    "displayName": "react",
+                    "displayName": "React",
                     "slug": "react"
                   }
-                },
+                }
+              ]
+            },
+            "cover": {
+              "data": [
                 {
                   "id": "4",
                   "attributes": {
-                    "displayName": "NextJs",
-                    "slug": "next-js"
+                    "alternativeText": "cidade na beira da praia com prédios ao final da tarde",
+                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
                   }
                 }
               ]
@@ -71,8 +75,8 @@
               "data": {
                 "id": "2",
                 "attributes": {
-                  "displayName": "Diogo Francisco",
-                  "slug": "diogo-francisco"
+                  "displayName": "Aira Cruz",
+                  "slug": "aira-cruz"
                 }
               }
             },
@@ -81,15 +85,60 @@
                 {
                   "id": "3",
                   "attributes": {
-                    "displayName": "React",
-                    "slug": "react"
+                    "displayName": "ReactJs",
+                    "slug": "react-js"
                   }
-                },
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "1",
+          "attributes": {
+            "title": "Usando o Canvas para criar gráficos em JavaScript",
+            "slug": "usando-o-canvas-para-criar-graficos-em-java-script",
+            "content": "<p>O Canvas é uma API de desenho bidimensional em HTML que permite criar gráficos e gráficos interativos diretamente no navegador.</p><p>Com JavaScript, é possível controlar o que é desenhado no canvas e, com isso, criar visualizações de dados personalizadas e impressionantes.</p><p>Neste artigo, vamos mostrar como usar o Canvas para criar gráficos em JavaScript.</p><h3><strong>Configurando o Canvas</strong></h3><p>Antes de começar a desenhar, precisamos configurar o Canvas em nosso HTML.</p><p>Primeiro, precisamos criar um elemento canvas em nossa página:</p><pre><code class=\"language-plaintext\">&lt;canvas id=\"grafico\"&gt;&lt;/canvas&gt;</code></pre><p>Em seguida, precisamos configurar o tamanho do canvas e definir um contexto de desenho.</p><p>&nbsp;</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg\" alt=\"grant-ritchie-x1w_Q78xNEY-unsplash.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606873/thumbnail_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 234w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606873/small_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/medium_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/large_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure><p>O contexto de desenho é o objeto que permite desenhar no canvas. Podemos fazer isso em JavaScript usando o seguinte código:</p><pre><code class=\"language-plaintext\">const canvas = document.getElementById(\"grafico\");\nconst ctx = canvas.getContext(\"2d\");</code></pre><p>Com isso, temos um canvas configurado e pronto para ser desenhado.</p><h2><strong>Desenhando no Canvas</strong></h2><p>Agora que temos um canvas configurado, podemos começar a desenhar nossos gráficos.</p><p>O Canvas suporta uma variedade de formas, como linhas, arcos, retângulos e imagens. Vamos começar com um exemplo simples de desenhar uma linha no canvas:</p><pre><code class=\"language-plaintext\">ctx.beginPath();\nctx.moveTo(0, 0);\nctx.lineTo(100, 100);\nctx.stroke();</code></pre>",
+            "excerpt": "O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.",
+            "allowComments": true,
+            "tags": {
+              "data": [
                 {
                   "id": "5",
                   "attributes": {
-                    "displayName": "Front-end",
-                    "slug": "front-end"
+                    "displayName": "JavaScript",
+                    "slug": "java-script"
+                  }
+                }
+              ]
+            },
+            "cover": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "alternativeText": "praia vista de cima, água cor vende escuro e rochas",
+                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "4",
+                "attributes": {
+                  "displayName": "Marcela Strug",
+                  "slug": "marcela-strug"
+                }
+              }
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "1",
+                  "attributes": {
+                    "displayName": "JavaScript",
+                    "slug": "java-script"
                   }
                 }
               ]
@@ -99,25 +148,29 @@
         {
           "id": "3",
           "attributes": {
-            "title": "useAuth",
-            "slug": "use-auth",
-            "excerpt": "A very common scenario is you have a bunch of components that need to render different depending on whether the current user is logged in and sometimes call authentication methods like signin, signout, sendPasswordResetEmail, etc.",
-            "content": "<p>This is a perfect use-case for a useAuth hook that enables any component to get the current auth state and re-render if it changes. Rather than have each instance of the useAuth hook fetch the current user, the hook simply calls useContext to get the data from farther up in the component tree. The real magic happens in our component and our useProvideAuth hook which wraps all our authentication methods (in this case we're using Firebase) and then uses React Context to make the current auth object available to all child components that call useAuth. Whew, that was a mouthfull... Hopefully as you read through the code below it should all make sense. Another reason I like this method is it neatly abstracts away our actual auth provider (Firebase), making it super easy to change providers in the future.&nbsp;</p><pre><code class=\"language-javascript\">// Top level App component\r\nimport React from \"react\";\r\nimport { ProvideAuth } from \"./use-auth.js\";\r\nfunction App(props) {\r\n  return (\r\n    &lt;ProvideAuth&gt;\r\n      {/*\r\n        Route components here, depending on how your app is structured.\r\n        If using Next.js this would be /pages/_app.js\r\n      */}\r\n    &lt;/ProvideAuth&gt;\r\n  );\r\n}\r\n// Any component that wants auth state\r\nimport React from \"react\";\r\nimport { useAuth } from \"./use-auth.js\";\r\nfunction Navbar(props) {\r\n  // Get auth state and re-render anytime it changes\r\n  const auth = useAuth();\r\n  return (\r\n    &lt;NavbarContainer&gt;\r\n      &lt;Logo /&gt;\r\n      &lt;Menu&gt;\r\n        &lt;Link to=\"/about\"&gt;About&lt;/Link&gt;\r\n        &lt;Link to=\"/contact\"&gt;Contact&lt;/Link&gt;\r\n        {auth.user ? (\r\n          &lt;Fragment&gt;\r\n            &lt;Link to=\"/account\"&gt;Account ({auth.user.email})&lt;/Link&gt;\r\n            &lt;Button onClick={() =&gt; auth.signout()}&gt;Signout&lt;/Button&gt;\r\n          &lt;/Fragment&gt;\r\n        ) : (\r\n          &lt;Link to=\"/signin\"&gt;Signin&lt;/Link&gt;\r\n        )}\r\n      &lt;/Menu&gt;\r\n    &lt;/NavbarContainer&gt;\r\n  );\r\n}\r\n// Hook (use-auth.js)\r\nimport React, { useState, useEffect, useContext, createContext } from \"react\";\r\nimport * as firebase from \"firebase/app\";\r\nimport \"firebase/auth\";\r\n// Add your Firebase credentials\r\nfirebase.initializeApp({\r\n  apiKey: \"\",\r\n  authDomain: \"\",\r\n  projectId: \"\",\r\n  appID: \"\",\r\n});\r\nconst authContext = createContext();\r\n// Provider component that wraps your app and makes auth object ...\r\n// ... available to any child component that calls useAuth().\r\nexport function ProvideAuth({ children }) {\r\n  const auth = useProvideAuth();\r\n  return &lt;authContext.Provider value={auth}&gt;{children}&lt;/authContext.Provider&gt;;\r\n}\r\n// Hook for child components to get the auth object ...\r\n// ... and re-render when it changes.\r\nexport const useAuth = () =&gt; {\r\n  return useContext(authContext);\r\n};\r\n// Provider hook that creates auth object and handles state\r\nfunction useProvideAuth() {\r\n  const [user, setUser] = useState(null);\r\n  // Wrap any Firebase methods we want to use making sure ...\r\n  // ... to save the user to state.\r\n  const signin = (email, password) =&gt; {\r\n    return firebase\r\n      .auth()\r\n      .signInWithEmailAndPassword(email, password)\r\n      .then((response) =&gt; {\r\n        setUser(response.user);\r\n        return response.user;\r\n      });\r\n  };\r\n  const signup = (email, password) =&gt; {\r\n    return firebase\r\n      .auth()\r\n      .createUserWithEmailAndPassword(email, password)\r\n      .then((response) =&gt; {\r\n        setUser(response.user);\r\n        return response.user;\r\n      });\r\n  };\r\n  const signout = () =&gt; {\r\n    return firebase\r\n      .auth()\r\n      .signOut()\r\n      .then(() =&gt; {\r\n        setUser(false);\r\n      });\r\n  };\r\n  const sendPasswordResetEmail = (email) =&gt; {\r\n    return firebase\r\n      .auth()\r\n      .sendPasswordResetEmail(email)\r\n      .then(() =&gt; {\r\n        return true;\r\n      });\r\n  };\r\n  const confirmPasswordReset = (code, password) =&gt; {\r\n    return firebase\r\n      .auth()\r\n      .confirmPasswordReset(code, password)\r\n      .then(() =&gt; {\r\n        return true;\r\n      });\r\n  };\r\n  // Subscribe to user on mount\r\n  // Because this sets state in the callback it will cause any ...\r\n  // ... component that utilizes this hook to re-render with the ...\r\n  // ... latest auth object.\r\n  useEffect(() =&gt; {\r\n    const unsubscribe = firebase.auth().onAuthStateChanged((user) =&gt; {\r\n      if (user) {\r\n        setUser(user);\r\n      } else {\r\n        setUser(false);\r\n      }\r\n    });\r\n    // Cleanup subscription on unmount\r\n    return () =&gt; unsubscribe();\r\n  }, []);\r\n  // Return the user object and auth methods\r\n  return {\r\n    user,\r\n    signin,\r\n    signup,\r\n    signout,\r\n    sendPasswordResetEmail,\r\n    confirmPasswordReset,\r\n  };\r\n}</code></pre><p><img src=\"/uploads/wp3321878_free_beautiful_wallpapers_for_laptop_e764a69442.jpg\" alt=\"um quiosque na praia com um caminho de plantas \"></p>",
+            "title": "Como criar um aplicativo de podcast com Next.js",
+            "slug": "como-criar-um-aplicativo-de-podcast-com-next-js",
+            "content": "<p>Criar um aplicativo de podcast é uma ótima maneira de explorar os recursos do Next.js e criar uma aplicação rica em recursos que permite que seus usuários escutem e descubram novos podcasts.</p><p>Neste tutorial, mostraremos como criar um aplicativo de podcast usando o Next.js e algumas bibliotecas populares.</p><h2><strong>Pré-requisitos</strong></h2><p>Antes de começar, você precisará ter o Node.js e o npm instalados em sua máquina.</p><p>Você também precisará ter uma conta no serviço de hospedagem de arquivos da Amazon, o Amazon S3, para armazenar os arquivos de áudio do seu podcast.</p><h2><strong>Configurando o projeto</strong></h2><p>Para começar, crie um novo diretório para o seu projeto e abra-o em seu terminal.</p><p>Em seguida, execute o seguinte comando para criar um novo projeto Next.js:</p><pre><code class=\"language-plaintext\">npx create-next-app my-podcast-app</code></pre><p>Isso criará um novo projeto Next.js em um diretório chamado <strong>my-podcast-app</strong>. Em seguida, acesse o diretório do projeto usando o seguinte comando:</p><pre><code class=\"language-plaintext\">cd my-podcast-app</code></pre><p>Aqui está uma breve descrição de cada uma das dependências que estamos instalando:</p><p><strong>react</strong>, <strong>react-dom</strong> e <strong>next</strong>: são as dependências básicas para criar um aplicativo Next.js.</p><p><strong>@fortawesome/fontawesome-svg-core</strong>, <strong>@fortawesome/free-solid-svg-icons</strong> e <strong>@fortawesome/react-fontawesome</strong>: são as dependências para usar ícones em nosso aplicativo.</p><p><strong>axios</strong>: é uma biblioteca para fazer solicitações HTTP.</p><p><strong>moment</strong>: é uma biblioteca para manipular datas.</p><p><strong>next-s3-upload</strong>: é uma biblioteca para fazer upload de arquivos para o Amazon S3.</p><p><strong>query-string</strong>: é uma biblioteca para analisar e serializar strings de consulta.</p><h2><strong>Criando os componentes</strong></h2><p>Agora que temos todas as dependências instaladas, podemos começar a criar os componentes para nosso aplicativo de podcast.</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg\" alt=\"wp3321878-free-beautiful-wallpapers-for-laptop.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/thumbnail_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 245w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/small_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/medium_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608117/large_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure>",
+            "excerpt": "Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.",
             "allowComments": true,
             "tags": {
               "data": [
                 {
-                  "id": "1",
+                  "id": "2",
                   "attributes": {
-                    "displayName": "useState",
-                    "slug": "use-state"
+                    "displayName": "Next",
+                    "slug": "next"
                   }
-                },
+                }
+              ]
+            },
+            "cover": {
+              "data": [
                 {
-                  "id": "4",
+                  "id": "7",
                   "attributes": {
-                    "displayName": "NextJs",
-                    "slug": "next-js"
+                    "alternativeText": "campo com montanhas ao fundo em um dia nublado",
+                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
                   }
                 }
               ]
@@ -134,65 +187,10 @@
             "categories": {
               "data": [
                 {
-                  "id": "2",
+                  "id": "4",
                   "attributes": {
                     "displayName": "NextJs",
                     "slug": "next-js"
-                  }
-                },
-                {
-                  "id": "3",
-                  "attributes": {
-                    "displayName": "React",
-                    "slug": "react"
-                  }
-                },
-                {
-                  "id": "5",
-                  "attributes": {
-                    "displayName": "Front-end",
-                    "slug": "front-end"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "id": "2",
-          "attributes": {
-            "title": "What Is JavaScript Made Of?",
-            "slug": "what-is-java-script-made-of",
-            "excerpt": "During my first few years of using JavaScript, I felt like a fraud. Even though I could build websites with frameworks, something was missing. I dreaded JavaScript job interviews because I didn’t have a solid grasp on fundamentals.",
-            "content": "<p>Over the years, I’ve formed a mental model of JavaScript that gave me confidence. Here, I’m sharing a very compressed version of it. It’s structured like a glossary, with each topic getting a few sentences.&nbsp;</p><p>As you read through this post, try to mentally keep score about how confident you feel about each topic. I won’t judge you if quite a few of them are a miss! At the end of this post, there is something that might help in that case.&nbsp;</p><ol><li>Value: The concept of a value is a bit abstract. It’s a “thing”. A value to JavaScript is what a number is to math, or what a point is to geometry. When your program runs, its world is full of values. Numbers like 1, 2, and 420 are values, but so are some other things, like this sentence: \"Cows go moo\". Not everything is a value though. A number is a value, but an if statement is not. We’ll look at a few different kinds of values below.&nbsp;</li><li>Type of Value: There are a few different “types” of values. For example, numbers like 420, strings like \"Cows go moo\", objects, and a few other types. You can learn a type of some value by putting typeof before it. For example, console.log(typeof 2) prints \"number\".&nbsp;</li><li>Primitive Values: Some value types are “primitive”. They include numbers, strings, and a few other types. One peculiar thing about primitive values is that you can’t create more of them, or change them in any way. For example, every time you write 2, you get the same value 2. You can’t “create” another 2 in your program, or make the 2 value “become” 3. This is also true for strings.&nbsp;</li><li>null and undefined: These are two special values. They’re special because there’s a lot of things you can’t do with them — they often cause errors. Usually, null represents that some value is missing intentionally, and undefined represents that a value is missing unintentionally. However, when to use either is left to the programmer. They exist because sometimes it’s better for an operation to fail than to proceed with a missing value. Equality: Like “value”, equality is a fundamental concept in JavaScript. We say two values are equal when they’re… actually, I’d never say that. If two values are equal, it means they are the same value. Not two different values, but one! For example, \"Cows go moo\" === \"Cows go moo\" and 2 === 2 because 2 is 2. Note we use three equal signs to represent this concept of equality in JavaScript.&nbsp;</li></ol><p><img src=\"/uploads/casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_d1abdf492e.jpg\" alt=\"bosque com lago e arvores no outono a frente de montanhas com neve\"></p><ul><li>&nbsp;Strict Equality: Same as above.&nbsp;</li><li>Referential Equality: Same as above.&nbsp;</li><li>Loose Equality: Oof, this one is different! Loose equality is when we use two equal signs (==). Things may be considered loosely equal even if they refer to different values that look similar (such as 2 and \"2\"). It was added to JavaScript early on for convenience and has caused endless confusion ever since. This concept is not fundamental, but is a common source of mistakes. You can learn how it works on a rainy day, but many people try to avoid it.&nbsp;</li></ul><pre><code class=\"language-javascript\">function Video({ video }) { return (\n{video.title}\n{video.description}\n); } </code></pre><p><a href=\"https://pt-br.react.dev/\">https://pt-br.react.dev/</a></p><p>JavaScript is made of these concepts, and more. I felt very anxious about my knowledge of JavaScript until I could build a correct mental model, and I’d like to help the next generation of developers bridge this gap sooner.</p>",
-            "allowComments": true,
-            "tags": {
-              "data": [
-                {
-                  "id": "3",
-                  "attributes": {
-                    "displayName": "useRef ",
-                    "slug": "use-ref"
-                  }
-                }
-              ]
-            },
-            "author": {
-              "data": {
-                "id": "4",
-                "attributes": {
-                  "displayName": "Aira Cruz",
-                  "slug": "aira-cruz"
-                }
-              }
-            },
-            "categories": {
-              "data": [
-                {
-                  "id": "1",
-                  "attributes": {
-                    "displayName": "JavaScript ",
-                    "slug": "java-script"
                   }
                 }
               ]

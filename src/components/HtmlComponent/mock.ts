@@ -1,3 +1,29 @@
 export default `
-<p>To put things into context: The new React documentation has been released and does recommend React to be used in a fully integrated framework. The documentation advocates using a (meta) framework (e.g. Next.js) instead of using React as a library (or framework - however you like to call it) in a bundler like Vite or Parcel. My take on this was easing the shift a bit by still recommending other React starters apart from a fully-integrated React framework before frameworks become the actual default eventually.&nbsp;</p><h4>"WE HAVE COME FULL CIRCLE ..."&nbsp;</h4><p>Who does not know this tech phrase coming from senior developers who are mocking the inevitable change on the horizon? Yes, we create, we learn, we adapt. That's how it has always been - it's the nature of the feedback loop. Developers tell the same about the current state of web development: We have implemented web applications as server-side applications (SSR - server-side rendering/server-side routing) in PHP, Java, C#, and later Ruby on Rails from roughly 2000 - 2010. All of them sprinkled more and more JavaScript (e.g. jQuery, MooTools, Dojo) into the mix for the improved client-side UX. In 2010, the tide shifted in favor of client-side applications (CSR - client-side rendering/client-side routing) under the umbrella term single-page applications (SPAs) which came as full blown JavaScript solutions. - first generation: Backbone, Knockout, Ember, Angular - second generation: React, Vue - in-between generations: Svelte - third generation: Solid, Qwik These days many are calling SPAs as an error in the history of web development. However, SPAs have their place and SPAs had to become a thing for JavaScript (and later TypeScript) taking off as web application frameworks and for coming to the conclusion of bringing JavaScript/TypeScript for SSR to the server, because the underlying tech (e.g. missing HTTP streaming) prevented us previously (thus far) from implementing it.</p><h3>REACT ON THE SERVER&nbsp;</h3><p>Anyway, this state of web applications as SPAs reigned roughly for 10 years ... &gt;Continue Reading: History of Web Applications The circle closes now, because we are going back to SSR with React and many other frameworks; each of them (Vue, Svelte, Solid, Qwik, Angular) influencing another. While many none native JavaScript developers are mocking this transition as "just going back to how it has always been" (see 2000 - 2010) or "JavaScript is inventing PHP", they miss all the improvements (e.g. performance with partial/selective hydrations, server-side components as an architectural pattern, resumability) compared to the previous circle. It's JavaScript (better: TypeScript) as first-class citizen for SSR web applications. It will be the next decade of how we implement web applications ... ... before AI takes over (tongue in cheek).&nbsp;</p><p><img src="/uploads/caio_silva_b1_BK_Bsi_JGI_unsplash_d195378ef2.jpg" alt="cidade na beira da praia com prédios ao final da tarde"></p><p>&nbsp;But enough rambling about why this will be the inevitable next stage of web development. Let's speak React and how to learn it in these turbulent waters.</p>
+<p>A internacionalização (i18n) é um recurso importante em aplicativos modernos, especialmente aqueles com público global.</p><p>Ao adicionar suporte a i18n, você permite que seus usuários alterem o idioma do aplicativo de acordo com suas preferências e necessidades.</p><p>Neste artigo, mostraremos como criar um aplicativo React com suporte a i18n usando a biblioteca i18next.</p><h2><strong>Instalação e configuração</strong></h2><p>Começamos instalando o pacote i18next e suas dependências:</p>
+
+<p>Em seguida, configuramos o i18next em nosso aplicativo. Podemos criar um arquivo <strong>i18n.js</strong> na raiz do projeto com a seguinte configuração:</p>
+
+<pre><code class="language-plaintext">
+import * as Styled from './styles';
+import HtmlComponent from '../HtmlComponent';
+
+export type FooterProps = {
+  footerHtml: string;
+};
+
+const Footer = ({ footerHtml }: FooterProps) => {
+  return (
+    <Styled.Container>
+      <HtmlComponent html={footerHtml} />
+    </Styled.Container>
+  );
+};
+
+export default Footer;
+
+</code></pre>
+
+<p>Aqui, estamos inicializando o i18next com um detector de idioma baseado no navegador.</p><p>Também estamos definindo um idioma padrão ("en") para usar caso o idioma do usuário não possa ser detectado.</p><h2><strong>Criando arquivos de tradução</strong></h2><p>Agora que o i18next está configurado, podemos criar nossos arquivos de tradução.</p><p>Podemos criar uma pasta <strong>locales</strong> na raiz do projeto para armazenar os arquivos de tradução. Por exemplo, podemos ter arquivos como <strong>en.json</strong> e <strong>pt-BR.json</strong> na pasta <strong>locales</strong>.</p><p>Um arquivo de tradução típico pode ser assim:</p>
+
+<p>Aqui, estamos definindo algumas mensagens de texto com placeholders (<strong>{{name}}</strong>) e também uma mensagem aninhada (<strong>button.submit</strong>).</p><p>&nbsp;</p><figure class="image"><img src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607748/casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg" alt="casey-horner-9XRpNnTqdJE-unsplash.jpg" srcset="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607746/thumbnail_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 234w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/small_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/medium_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/large_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 1000w" sizes="100%" width="100%"></figure>
 `;
