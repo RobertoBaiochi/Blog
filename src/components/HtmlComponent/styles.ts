@@ -34,7 +34,7 @@ export const Container = styled.p`
     .image {
       background: ${theme.colors.mediumGray};
       line-height: 0;
-      margin: ${theme.spacing.xlarge};
+      margin: ${theme.spacing.xlarge} 0;
     }
 
     .image figcaption {
@@ -58,6 +58,24 @@ export const Container = styled.p`
     ul, ol {
       margin: ${theme.spacing.xlarge};
     }
+
+    .table {
+      width: 100%;
+      overflow: hidden;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table td,
+    table th {
+      padding: ${theme.spacing.small};
+      border: 0.1rem solid ${theme.colors.mediumGray};
+    }
+
 
     @media ${theme.media.lteMedium} {
         font-size: 2rem;

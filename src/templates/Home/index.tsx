@@ -1,10 +1,9 @@
-import { CloneMe } from '@/components/CloneMe';
 import { Wrapper } from './styles';
 
 export function Home() {
   return (
     <Wrapper>
-      <CloneMe title='Clone Me'/>
+      <h1>Hello World</h1>
     </Wrapper>
   );
 }
