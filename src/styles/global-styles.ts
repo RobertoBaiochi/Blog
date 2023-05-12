@@ -20,6 +20,9 @@ export const GlobalStyles = createGlobalStyle`
     margin: ${({ theme }) => theme.spacing.large} 0;
     font-weight: 800;
   }
+  img {
+    max-width: 100%;
+  }
   p {
     margin: ${({ theme }) => theme.spacing.medium} 0;
   }
