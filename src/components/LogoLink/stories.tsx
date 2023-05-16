@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/react';
 import LogoLink, { LogoLinkProps } from '.';
-const imageFile = '/static/image/carta.jpg';
+const imageFile = '/static/images/carta.jpg';
 
 export default {
   title: 'LogoLink',

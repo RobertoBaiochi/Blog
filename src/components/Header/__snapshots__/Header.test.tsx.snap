@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+<div>
+  <header
+    class="sc-3dbff527-0 glAzLN"
+  >
+    <a
+      href="/"
+      target="_self"
+    >
+      <div
+        class="sc-27d34c3d-1 eWEQKH"
+      >
+        <img
+          alt="Console.Blog"
+          src="/static/images/carta.jpg"
+        />
+      </div>
+    </a>
+    <div
+      class="sc-3dbff527-1 iryleV"
+    >
+      <h2
+        class="sc-45008c58-0 idwYbA"
+      >
+        Console.Blog
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id accumsan nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      </p>
+    </div>
+  </header>
+</div>
+`;

@@ -1,15 +1,15 @@
 import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
-import Header, { HeaderProps } from '.';
+import ArticleMeta, { ArticleMetaProps } from '.';
 import '@testing-library/jest-dom';
 
-const props: HeaderProps = {
-  title: 'any',
+const props: ArticleMetaProps = {
+  title: 'string',
 };
 
-describe('<Header />', () => {
+describe('<ArticleMeta />', () => {
   it('should render', () => {
-    renderTheme(<Header {...props} />);
+    renderTheme(<ArticleMeta {...props} />);
 
     expect(screen.getByRole('heading', { name: 'Oi' })).toBeInTheDocument();
   });

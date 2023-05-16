@@ -1,18 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LogoLink /> should match snapshot 1`] = `
-<h1
-  class="sc-45008c58-0 gNsfKs"
+<a
+  class="sc-27d34c3d-0 fANxgO"
+  href="#target"
+  target="_self"
 >
-  <a
-    class="sc-c265ee56-0 eWKpRN"
-    href="#target"
-    target="_self"
-  >
-    <img
-      alt="Olá Mundo"
-      src="image.jpg"
-    />
-  </a>
-</h1>
+  <img
+    alt="Olá Mundo"
+    src="image.jpg"
+  />
+</a>
 `;

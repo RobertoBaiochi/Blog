@@ -13,7 +13,7 @@ describe('<Footer />', () => {
           class="sc-32211b0-0 gGtWnP"
         >
           <p
-            class="sc-b498942-0 krpTnp"
+            class="sc-cc188149-0 iNGnkB"
           >
             <h1>
               Teste

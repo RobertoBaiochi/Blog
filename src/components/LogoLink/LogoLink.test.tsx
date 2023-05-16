@@ -15,7 +15,12 @@ describe('<LogoLink />', () => {
 
   it('should render image logo', () => {
     renderTheme(
-      <LogoLink link="#target" text="Olá Mundo" srcImg="image.jpg" />,
+      <LogoLink
+        newTab={true}
+        link="#target"
+        text="Olá Mundo"
+        srcImg="image.jpg"
+      />,
     );
     expect(screen.getByAltText('Olá Mundo')).toHaveAttribute(
       'src',

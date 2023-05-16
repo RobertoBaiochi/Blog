@@ -21,24 +21,28 @@ const LogoLink = ({
 
   if (nextLink) {
     return (
-      <Heading size="small" uppercase>
-        <Link href={link} passHref>
-          <Styled.Container target={target}>
-            {!!srcImg && <img src={srcImg} alt={text} />}
-            {!srcImg && text}
-          </Styled.Container>
-        </Link>
-      </Heading>
+      <Link href={link} passHref target={target}>
+        <Styled.Container>
+          {!!srcImg && <img src={srcImg} alt={text} />}
+          {!srcImg && (
+            <Heading size="small" uppercase>
+              {text}
+            </Heading>
+          )}
+        </Styled.Container>
+      </Link>
     );
   }
 
   return (
-    <Heading size="small" uppercase>
-      <Styled.Container href={link} target={target}>
-        {!!srcImg && <img src={srcImg} alt={text} />}
-        {!srcImg && text}
-      </Styled.Container>
-    </Heading>
+    <Styled.ContainerLink href={link} target={target}>
+      {!!srcImg && <img src={srcImg} alt={text} />}
+      {!srcImg && (
+        <Heading size="small" uppercase>
+          {text}
+        </Heading>
+      )}
+    </Styled.ContainerLink>
   );
 };
 
