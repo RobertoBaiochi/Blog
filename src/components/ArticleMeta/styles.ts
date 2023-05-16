@@ -1,7 +1,29 @@
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  ${() => css`
-    width: 100%;
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.small};
+    color: ${theme.colors.darkerGray};
+    font-style: italic;
+
+    .categories span::after {
+      content: ', ';
+    }
+
+    .categories span:last-child::after {
+      content: '';
+    }
+
+    a {
+      color: ${theme.colors.secondary};
+      text-decoration: none;
+      transition: all 300ms ease-in-out;
+
+      @media(hover:hover) {
+        &:hover {
+          filter: brightness(50%);
+        }
+      }
+    }
   `}
 `;
