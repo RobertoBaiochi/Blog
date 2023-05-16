@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleHeader /> should render heading, excerpt, cover img and meta 1`] = `
+<div>
+  <header
+    class="sc-bd24d15e-0 kcXlxA"
+  >
+    <h3
+      class="sc-45008c58-0 keulhw"
+    >
+      O plano para o React 18
+    </h3>
+    <p
+      class="sc-bd24d15e-1 ckGDJF"
+    >
+      Essas atualizações são destinadas principalmente aos mantenedores de bibliotecas de terceiros. Se você está aprendendo, ensinando ou usando o React para criar aplicações voltadas para o usuário, pode seguramente ignorar este post. Mas você é bem vindo para acompanhar as discussões no Grupo de Trabalho React 18 se estiver curioso!
+    </p>
+    <img
+      alt="altText"
+      class="sc-bd24d15e-2 ktsHcQ"
+      src="/static/images/capa.jpg"
+    />
+    <div
+      class="sc-7c55c9a4-0 bRvXpo"
+    >
+      <p>
+        <span>
+          Por 
+        </span>
+        <a
+          href="/author/roberto-baiochi"
+        >
+          Roberto Baiochi
+        </a>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <time
+          datetime="2023-05-09T04:49:38.694Z"
+        >
+          9 de mai. de 2023
+        </time>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <span
+          class="categories"
+        >
+          <span>
+            <a
+              href="/category/react-js"
+            >
+              ReactJs
+            </a>
+          </span>
+          <span>
+            <a
+              href="/category/next-js"
+            >
+              NextJs
+            </a>
+          </span>
+        </span>
+      </p>
+    </div>
+  </header>
+</div>
+`;
