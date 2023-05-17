@@ -7,7 +7,7 @@ export default {
   title: 'HtmlComponent',
   component: HtmlComponent,
   args: {
-    html: mock,
+    content: mock,
   },
 } as Meta;
 

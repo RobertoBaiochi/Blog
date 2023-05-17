@@ -1,11 +1,11 @@
 import * as Styled from './styles';
 
 export type HtmlComponentProps = {
-  html: string;
+  content: string;
 };
 
-const HtmlComponent = ({ html }: HtmlComponentProps) => {
-  return <Styled.Container dangerouslySetInnerHTML={{ __html: html }} />;
+const HtmlComponent = ({ content }: HtmlComponentProps) => {
+  return <Styled.Container dangerouslySetInnerHTML={{ __html: content }} />;
 };
 
 export default HtmlComponent;

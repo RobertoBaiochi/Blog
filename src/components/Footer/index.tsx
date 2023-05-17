@@ -8,7 +8,7 @@ export type FooterProps = {
 const Footer = ({ footerHtml }: FooterProps) => {
   return (
     <Styled.Container>
-      <HtmlComponent html={footerHtml} />
+      <HtmlComponent content={footerHtml} />
     </Styled.Container>
   );
 };
