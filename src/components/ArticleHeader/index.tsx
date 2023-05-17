@@ -1,11 +1,11 @@
-import { StrapiImage } from '../shared-typed/cover';
+import { StrapiImage } from '../../shared-typed/cover';
 import { Wrapper, Excerpt, Cover } from './styles';
 
 import Heading from '../Heading';
 import ArticleMeta, { ArticleMetaProps } from '../ArticleMeta';
 
 export type ArticleHeaderProps = {
-  id: string;
+  id?: string;
   title: string;
   excerpt: string;
   cover: StrapiImage;
@@ -19,6 +19,7 @@ const ArticleHeader = ({
   categories,
   createdAt,
 }: ArticleHeaderProps) => {
+  const { alternativeText, url } = cover.data[0].attributes;
   return (
     <Wrapper>
       <Heading as="h3" size="big">
@@ -27,7 +28,7 @@ const ArticleHeader = ({
 
       <Excerpt>{excerpt}</Excerpt>
 
-      <Cover src={cover.url} alt={cover.alternativeText} />
+      <Cover src={url} alt={alternativeText} />
 
       <ArticleMeta
         author={author}
