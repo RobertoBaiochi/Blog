@@ -14,7 +14,7 @@ exports[`<Header /> should match snapshot 1`] = `
       >
         <img
           alt="Console.Blog"
-          src="/static/images/carta.jpg"
+          src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
         />
       </div>
     </a>
@@ -27,7 +27,7 @@ exports[`<Header /> should match snapshot 1`] = `
         Console.Blog
       </h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id accumsan nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Debuggando passo a passo do conhecimento
       </p>
     </div>
   </header>

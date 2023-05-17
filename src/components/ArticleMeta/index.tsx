@@ -1,6 +1,4 @@
 import { formatDate } from '../../utils/format-date';
-import { Author } from '../shared-typed/author';
-import { Category } from '../shared-typed/category';
 import { Wrapper } from './styles';
 
 export type ArticleMetaProps = {

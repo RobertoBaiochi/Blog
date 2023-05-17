@@ -1,3 +1,9 @@
-import { Metadata } from './metadata';
-
-export type Author = Metadata;
+export type Author = {
+  data: {
+    id: string;
+    attributes: {
+      displayName: string;
+      slug: string;
+    };
+  };
+};

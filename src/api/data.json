@@ -2,198 +2,216 @@
   "data": {
     "setting": {
       "data": {
-        "id": "1",
+        "id": 1,
         "attributes": {
           "blogName": "Console.Blog",
           "blogDescription": "Debuggando passo a passo do conhecimento",
+          "footer": "<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://robertobaiochi.com.br\">Desenvolvido e criado por Roberto Baiochi</a></p>",
+          "createdAt": "2023-05-09T05:06:02.223Z",
           "logo": {
             "data": {
-              "id": "8",
+              "id": 8,
               "attributes": {
                 "alternativeText": "Roberto Baiochi",
-                "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
+                "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg",
+                "previewUrl": null,
+                "createdAt": "2023-05-09T05:04:05.903Z"
               }
             }
           },
           "menuLink": [
             {
-              "id": "1",
+              "id": 1,
               "link": "#link1",
               "text": "Link1",
               "newTab": false
             },
             {
-              "id": "2",
+              "id": 2,
               "link": "#link2",
               "text": "Link2",
               "newTab": false
             },
             {
-              "id": "3",
+              "id": 3,
               "link": "#link3",
               "text": "Link3",
               "newTab": false
             }
-          ],
-          "footer": "<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://robertobaiochi.com.br\">Desenvolvido e criado por Roberto Baiochi</a></p>"
+          ]
         }
       }
     },
     "posts": {
       "data": [
         {
-          "id": "2",
+          "id": 2,
           "attributes": {
             "title": "Como criar um aplicativo React com suporte a internacionalização (i18n)",
             "slug": "como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n",
-            "content": "<p>A internacionalização (i18n) é um recurso importante em aplicativos modernos, especialmente aqueles com público global.</p><p>Ao adicionar suporte a i18n, você permite que seus usuários alterem o idioma do aplicativo de acordo com suas preferências e necessidades.</p><p>Neste artigo, mostraremos como criar um aplicativo React com suporte a i18n usando a biblioteca i18next.</p><h2><strong>Instalação e configuração</strong></h2><p>Começamos instalando o pacote i18next e suas dependências:</p><pre><code class=\"language-plaintext\">npm install i18next react-i18next i18next-browser-languagedetector</code></pre><p>Em seguida, configuramos o i18next em nosso aplicativo. Podemos criar um arquivo <strong>i18n.js</strong> na raiz do projeto com a seguinte configuração:</p><pre><code class=\"language-plaintext\">import i18n from \"i18next\";\nimport LanguageDetector from \"i18next-browser-languagedetector\";\nimport { initReactI18next } from \"react-i18next\";\n\ni18n\n  .use(LanguageDetector)\n  .use(initReactI18next)\n  .init({\n    fallbackLng: \"en\",\n    debug: true,\n    interpolation: {\n      escapeValue: false, // not needed for react as it escapes by default\n    },\n  });\n\nexport default i18n;</code></pre><p>Aqui, estamos inicializando o i18next com um detector de idioma baseado no navegador.</p><p>Também estamos definindo um idioma padrão (\"en\") para usar caso o idioma do usuário não possa ser detectado.</p><h2><strong>Criando arquivos de tradução</strong></h2><p>Agora que o i18next está configurado, podemos criar nossos arquivos de tradução.</p><p>Podemos criar uma pasta <strong>locales</strong> na raiz do projeto para armazenar os arquivos de tradução. Por exemplo, podemos ter arquivos como <strong>en.json</strong> e <strong>pt-BR.json</strong> na pasta <strong>locales</strong>.</p><p>Um arquivo de tradução típico pode ser assim:</p><pre><code class=\"language-plaintext\">{\n  \t\t\"greeting\": \"Hello, {{name}}!\",\n  \t\t\"welcome\": \"Welcome to my app.\",\n  \t\t\"button\": {\n    \t\t\"submit\": \"Submit\",\n    \t\t\"cancel\": \"Cancel\"\n  \t\t}\n}</code></pre><p>Aqui, estamos definindo algumas mensagens de texto com placeholders (<strong>{{name}}</strong>) e também uma mensagem aninhada (<strong>button.submit</strong>).</p><p>&nbsp;</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607748/casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg\" alt=\"casey-horner-9XRpNnTqdJE-unsplash.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607746/thumbnail_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 234w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/small_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/medium_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/large_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure>",
             "excerpt": "Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.",
+            "content": "<p>A internacionalização (i18n) é um recurso importante em aplicativos modernos, especialmente aqueles com público global.</p><p>Ao adicionar suporte a i18n, você permite que seus usuários alterem o idioma do aplicativo de acordo com suas preferências e necessidades.</p><p>Neste artigo, mostraremos como criar um aplicativo React com suporte a i18n usando a biblioteca i18next.</p><h2><strong>Instalação e configuração</strong></h2><p>Começamos instalando o pacote i18next e suas dependências:</p><pre><code class=\"language-plaintext\">npm install i18next react-i18next i18next-browser-languagedetector</code></pre><p>Em seguida, configuramos o i18next em nosso aplicativo. Podemos criar um arquivo <strong>i18n.js</strong> na raiz do projeto com a seguinte configuração:</p><pre><code class=\"language-plaintext\">import i18n from \"i18next\";\nimport LanguageDetector from \"i18next-browser-languagedetector\";\nimport { initReactI18next } from \"react-i18next\";\n\ni18n\n  .use(LanguageDetector)\n  .use(initReactI18next)\n  .init({\n    fallbackLng: \"en\",\n    debug: true,\n    interpolation: {\n      escapeValue: false, // not needed for react as it escapes by default\n    },\n  });\n\nexport default i18n;</code></pre><p>Aqui, estamos inicializando o i18next com um detector de idioma baseado no navegador.</p><p>Também estamos definindo um idioma padrão (\"en\") para usar caso o idioma do usuário não possa ser detectado.</p><h2><strong>Criando arquivos de tradução</strong></h2><p>Agora que o i18next está configurado, podemos criar nossos arquivos de tradução.</p><p>Podemos criar uma pasta <strong>locales</strong> na raiz do projeto para armazenar os arquivos de tradução. Por exemplo, podemos ter arquivos como <strong>en.json</strong> e <strong>pt-BR.json</strong> na pasta <strong>locales</strong>.</p><p>Um arquivo de tradução típico pode ser assim:</p><pre><code class=\"language-plaintext\">{\n  \t\t\"greeting\": \"Hello, {{name}}!\",\n  \t\t\"welcome\": \"Welcome to my app.\",\n  \t\t\"button\": {\n    \t\t\"submit\": \"Submit\",\n    \t\t\"cancel\": \"Cancel\"\n  \t\t}\n}</code></pre><p>Aqui, estamos definindo algumas mensagens de texto com placeholders (<strong>{{name}}</strong>) e também uma mensagem aninhada (<strong>button.submit</strong>).</p><p>&nbsp;</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607748/casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg\" alt=\"casey-horner-9XRpNnTqdJE-unsplash.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607746/thumbnail_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 234w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/small_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/medium_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607747/large_casey_horner_9_X_Rp_Nn_Tqd_JE_unsplash_c1dafbcff4.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure>",
             "allowComments": true,
-            "tags": {
+            "createdAt": "2023-05-09T04:49:38.694Z",
+            "cover": {
               "data": [
                 {
-                  "id": "1",
+                  "id": 4,
                   "attributes": {
-                    "displayName": "React",
-                    "slug": "react"
+                    "alternativeText": "cidade na beira da praia com prédios ao final da tarde",
+                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg",
+                    "createdAt": "2023-05-09T04:38:54.600Z"
                   }
                 }
               ]
             },
-            "cover": {
+            "tags": {
               "data": [
                 {
-                  "id": "4",
+                  "id": 1,
                   "attributes": {
-                    "alternativeText": "cidade na beira da praia com prédios ao final da tarde",
-                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+                    "displayName": "React",
+                    "slug": "react",
+                    "createdAt": "2023-05-09T04:21:38.267Z"
+                  }
+                }
+              ]
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": 3,
+                  "attributes": {
+                    "displayName": "ReactJs",
+                    "slug": "react-js",
+                    "createdAt": "2023-05-09T04:19:58.836Z"
                   }
                 }
               ]
             },
             "author": {
               "data": {
-                "id": "2",
+                "id": 2,
                 "attributes": {
                   "displayName": "Aira Cruz",
-                  "slug": "aira-cruz"
+                  "slug": "aira-cruz",
+                  "createdAt": "2023-05-09T04:16:08.799Z"
                 }
               }
-            },
-            "categories": {
-              "data": [
-                {
-                  "id": "3",
-                  "attributes": {
-                    "displayName": "ReactJs",
-                    "slug": "react-js"
-                  }
-                }
-              ]
             }
           }
         },
         {
-          "id": "1",
+          "id": 1,
           "attributes": {
             "title": "Usando o Canvas para criar gráficos em JavaScript",
             "slug": "usando-o-canvas-para-criar-graficos-em-java-script",
-            "content": "<p>O Canvas é uma API de desenho bidimensional em HTML que permite criar gráficos e gráficos interativos diretamente no navegador.</p><p>Com JavaScript, é possível controlar o que é desenhado no canvas e, com isso, criar visualizações de dados personalizadas e impressionantes.</p><p>Neste artigo, vamos mostrar como usar o Canvas para criar gráficos em JavaScript.</p><h3><strong>Configurando o Canvas</strong></h3><p>Antes de começar a desenhar, precisamos configurar o Canvas em nosso HTML.</p><p>Primeiro, precisamos criar um elemento canvas em nossa página:</p><pre><code class=\"language-plaintext\">&lt;canvas id=\"grafico\"&gt;&lt;/canvas&gt;</code></pre><p>Em seguida, precisamos configurar o tamanho do canvas e definir um contexto de desenho.</p><p>&nbsp;</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg\" alt=\"grant-ritchie-x1w_Q78xNEY-unsplash.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606873/thumbnail_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 234w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606873/small_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/medium_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/large_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure><p>O contexto de desenho é o objeto que permite desenhar no canvas. Podemos fazer isso em JavaScript usando o seguinte código:</p><pre><code class=\"language-plaintext\">const canvas = document.getElementById(\"grafico\");\nconst ctx = canvas.getContext(\"2d\");</code></pre><p>Com isso, temos um canvas configurado e pronto para ser desenhado.</p><h2><strong>Desenhando no Canvas</strong></h2><p>Agora que temos um canvas configurado, podemos começar a desenhar nossos gráficos.</p><p>O Canvas suporta uma variedade de formas, como linhas, arcos, retângulos e imagens. Vamos começar com um exemplo simples de desenhar uma linha no canvas:</p><pre><code class=\"language-plaintext\">ctx.beginPath();\nctx.moveTo(0, 0);\nctx.lineTo(100, 100);\nctx.stroke();</code></pre>",
             "excerpt": "O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.",
+            "content": "<p>O Canvas é uma API de desenho bidimensional em HTML que permite criar gráficos e gráficos interativos diretamente no navegador.</p><p>Com JavaScript, é possível controlar o que é desenhado no canvas e, com isso, criar visualizações de dados personalizadas e impressionantes.</p><p>Neste artigo, vamos mostrar como usar o Canvas para criar gráficos em JavaScript.</p><h3><strong>Configurando o Canvas</strong></h3><p>Antes de começar a desenhar, precisamos configurar o Canvas em nosso HTML.</p><p>Primeiro, precisamos criar um elemento canvas em nossa página:</p><pre><code class=\"language-plaintext\">&lt;canvas id=\"grafico\"&gt;&lt;/canvas&gt;</code></pre><p>Em seguida, precisamos configurar o tamanho do canvas e definir um contexto de desenho.</p><p>&nbsp;</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg\" alt=\"grant-ritchie-x1w_Q78xNEY-unsplash.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606873/thumbnail_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 234w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606873/small_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/medium_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683606874/large_grant_ritchie_x1w_Q78x_NEY_unsplash_517a51cdb3.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure><p>O contexto de desenho é o objeto que permite desenhar no canvas. Podemos fazer isso em JavaScript usando o seguinte código:</p><pre><code class=\"language-plaintext\">const canvas = document.getElementById(\"grafico\");\nconst ctx = canvas.getContext(\"2d\");</code></pre><p>Com isso, temos um canvas configurado e pronto para ser desenhado.</p><h2><strong>Desenhando no Canvas</strong></h2><p>Agora que temos um canvas configurado, podemos começar a desenhar nossos gráficos.</p><p>O Canvas suporta uma variedade de formas, como linhas, arcos, retângulos e imagens. Vamos começar com um exemplo simples de desenhar uma linha no canvas:</p><pre><code class=\"language-plaintext\">ctx.beginPath();\nctx.moveTo(0, 0);\nctx.lineTo(100, 100);\nctx.stroke();</code></pre>",
             "allowComments": true,
-            "tags": {
+            "createdAt": "2023-05-09T04:33:33.718Z",
+            "cover": {
               "data": [
                 {
-                  "id": "5",
+                  "id": 2,
                   "attributes": {
-                    "displayName": "JavaScript",
-                    "slug": "java-script"
+                    "alternativeText": "praia vista de cima, água cor vende escuro e rochas",
+                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg",
+                    "createdAt": "2023-05-08T21:24:47.011Z"
                   }
                 }
               ]
             },
-            "cover": {
+            "tags": {
               "data": [
                 {
-                  "id": "2",
+                  "id": 5,
                   "attributes": {
-                    "alternativeText": "praia vista de cima, água cor vende escuro e rochas",
-                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+                    "displayName": "JavaScript",
+                    "slug": "java-script",
+                    "createdAt": "2023-05-09T04:33:56.802Z"
+                  }
+                }
+              ]
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": 1,
+                  "attributes": {
+                    "displayName": "JavaScript",
+                    "slug": "java-script",
+                    "createdAt": "2023-05-09T04:18:31.899Z"
                   }
                 }
               ]
             },
             "author": {
               "data": {
-                "id": "4",
+                "id": 4,
                 "attributes": {
                   "displayName": "Marcela Strug",
-                  "slug": "marcela-strug"
+                  "slug": "marcela-strug",
+                  "createdAt": "2023-05-09T04:17:40.169Z"
                 }
               }
-            },
-            "categories": {
-              "data": [
-                {
-                  "id": "1",
-                  "attributes": {
-                    "displayName": "JavaScript",
-                    "slug": "java-script"
-                  }
-                }
-              ]
             }
           }
         },
         {
-          "id": "3",
+          "id": 3,
           "attributes": {
             "title": "Como criar um aplicativo de podcast com Next.js",
             "slug": "como-criar-um-aplicativo-de-podcast-com-next-js",
-            "content": "<p>Criar um aplicativo de podcast é uma ótima maneira de explorar os recursos do Next.js e criar uma aplicação rica em recursos que permite que seus usuários escutem e descubram novos podcasts.</p><p>Neste tutorial, mostraremos como criar um aplicativo de podcast usando o Next.js e algumas bibliotecas populares.</p><h2><strong>Pré-requisitos</strong></h2><p>Antes de começar, você precisará ter o Node.js e o npm instalados em sua máquina.</p><p>Você também precisará ter uma conta no serviço de hospedagem de arquivos da Amazon, o Amazon S3, para armazenar os arquivos de áudio do seu podcast.</p><h2><strong>Configurando o projeto</strong></h2><p>Para começar, crie um novo diretório para o seu projeto e abra-o em seu terminal.</p><p>Em seguida, execute o seguinte comando para criar um novo projeto Next.js:</p><pre><code class=\"language-plaintext\">npx create-next-app my-podcast-app</code></pre><p>Isso criará um novo projeto Next.js em um diretório chamado <strong>my-podcast-app</strong>. Em seguida, acesse o diretório do projeto usando o seguinte comando:</p><pre><code class=\"language-plaintext\">cd my-podcast-app</code></pre><p>Aqui está uma breve descrição de cada uma das dependências que estamos instalando:</p><p><strong>react</strong>, <strong>react-dom</strong> e <strong>next</strong>: são as dependências básicas para criar um aplicativo Next.js.</p><p><strong>@fortawesome/fontawesome-svg-core</strong>, <strong>@fortawesome/free-solid-svg-icons</strong> e <strong>@fortawesome/react-fontawesome</strong>: são as dependências para usar ícones em nosso aplicativo.</p><p><strong>axios</strong>: é uma biblioteca para fazer solicitações HTTP.</p><p><strong>moment</strong>: é uma biblioteca para manipular datas.</p><p><strong>next-s3-upload</strong>: é uma biblioteca para fazer upload de arquivos para o Amazon S3.</p><p><strong>query-string</strong>: é uma biblioteca para analisar e serializar strings de consulta.</p><h2><strong>Criando os componentes</strong></h2><p>Agora que temos todas as dependências instaladas, podemos começar a criar os componentes para nosso aplicativo de podcast.</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg\" alt=\"wp3321878-free-beautiful-wallpapers-for-laptop.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/thumbnail_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 245w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/small_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/medium_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608117/large_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure>",
             "excerpt": "Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.",
+            "content": "<p>Criar um aplicativo de podcast é uma ótima maneira de explorar os recursos do Next.js e criar uma aplicação rica em recursos que permite que seus usuários escutem e descubram novos podcasts.</p><p>Neste tutorial, mostraremos como criar um aplicativo de podcast usando o Next.js e algumas bibliotecas populares.</p><h2><strong>Pré-requisitos</strong></h2><p>Antes de começar, você precisará ter o Node.js e o npm instalados em sua máquina.</p><p>Você também precisará ter uma conta no serviço de hospedagem de arquivos da Amazon, o Amazon S3, para armazenar os arquivos de áudio do seu podcast.</p><h2><strong>Configurando o projeto</strong></h2><p>Para começar, crie um novo diretório para o seu projeto e abra-o em seu terminal.</p><p>Em seguida, execute o seguinte comando para criar um novo projeto Next.js:</p><pre><code class=\"language-plaintext\">npx create-next-app my-podcast-app</code></pre><p>Isso criará um novo projeto Next.js em um diretório chamado <strong>my-podcast-app</strong>. Em seguida, acesse o diretório do projeto usando o seguinte comando:</p><pre><code class=\"language-plaintext\">cd my-podcast-app</code></pre><p>Aqui está uma breve descrição de cada uma das dependências que estamos instalando:</p><p><strong>react</strong>, <strong>react-dom</strong> e <strong>next</strong>: são as dependências básicas para criar um aplicativo Next.js.</p><p><strong>@fortawesome/fontawesome-svg-core</strong>, <strong>@fortawesome/free-solid-svg-icons</strong> e <strong>@fortawesome/react-fontawesome</strong>: são as dependências para usar ícones em nosso aplicativo.</p><p><strong>axios</strong>: é uma biblioteca para fazer solicitações HTTP.</p><p><strong>moment</strong>: é uma biblioteca para manipular datas.</p><p><strong>next-s3-upload</strong>: é uma biblioteca para fazer upload de arquivos para o Amazon S3.</p><p><strong>query-string</strong>: é uma biblioteca para analisar e serializar strings de consulta.</p><h2><strong>Criando os componentes</strong></h2><p>Agora que temos todas as dependências instaladas, podemos começar a criar os componentes para nosso aplicativo de podcast.</p><figure class=\"image\"><img src=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg\" alt=\"wp3321878-free-beautiful-wallpapers-for-laptop.jpg\" srcset=\"https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/thumbnail_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 245w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/small_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 500w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608116/medium_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 750w, https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608117/large_wp3321878_free_beautiful_wallpapers_for_laptop_bce141fbe8.jpg 1000w\" sizes=\"100vw\" width=\"1000\"></figure>",
             "allowComments": true,
-            "tags": {
+            "createdAt": "2023-05-09T04:56:53.361Z",
+            "cover": {
               "data": [
                 {
-                  "id": "2",
+                  "id": 7,
                   "attributes": {
-                    "displayName": "Next",
-                    "slug": "next"
+                    "alternativeText": "campo com montanhas ao fundo em um dia nublado",
+                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg",
+                    "createdAt": "2023-05-09T04:56:23.022Z"
                   }
                 }
               ]
             },
-            "cover": {
+            "tags": {
               "data": [
                 {
-                  "id": "7",
+                  "id": 2,
                   "attributes": {
-                    "alternativeText": "campo com montanhas ao fundo em um dia nublado",
-                    "url": "https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+                    "displayName": "Next",
+                    "slug": "next",
+                    "createdAt": "2023-05-09T04:22:01.384Z"
+                  }
+                }
+              ]
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": 4,
+                  "attributes": {
+                    "displayName": "NextJs",
+                    "slug": "next-js",
+                    "createdAt": "2023-05-09T04:20:30.362Z"
                   }
                 }
               ]
             },
             "author": {
               "data": {
-                "id": "1",
+                "id": 1,
                 "attributes": {
                   "displayName": "Roberto Baiochi",
-                  "slug": "roberto-baiochi"
+                  "slug": "roberto-baiochi",
+                  "createdAt": "2023-05-08T22:16:54.558Z"
                 }
               }
-            },
-            "categories": {
-              "data": [
-                {
-                  "id": "4",
-                  "attributes": {
-                    "displayName": "NextJs",
-                    "slug": "next-js"
-                  }
-                }
-              ]
             }
           }
         }

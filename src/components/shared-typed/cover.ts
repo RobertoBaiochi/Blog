@@ -1,5 +1,14 @@
-export type StrapiImage = {
-  id: string;
-  alternativeText: string;
-  url: string;
+export type CoverProps = {
+  cover: {
+    data: [
+      {
+        id: number;
+        attributes: {
+          alternativeText: string;
+          url: string;
+          createdAt: string;
+        };
+      },
+    ];
+  };
 };
