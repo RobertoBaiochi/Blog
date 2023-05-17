@@ -10,13 +10,23 @@ const props: ArticleMetaProps = mock;
 describe('<ArticleMeta />', () => {
   it('should render author and category links', () => {
     renderTheme(<ArticleMeta {...props} />);
-    const linkAuthor = screen.getByRole('link', { name: 'Roberto Baiochi' });
-    const linkCategoryNext = screen.getByRole('link', { name: 'NextJs' });
-    const linkCategoryReact = screen.getByRole('link', { name: 'ReactJs' });
+    const {
+      categories,
+      author: { displayNameAuthor, slugAuthor },
+    } = props;
+    const {
+      attributes: { displayName, slug },
+    } = categories.data[0];
 
-    expect(linkAuthor).toHaveAttribute('href', '/author/roberto-baiochi');
-    expect(linkCategoryNext).toHaveAttribute('href', '/category/next-js');
-    expect(linkCategoryReact).toHaveAttribute('href', '/category/react-js');
+    const linkAuthor = screen.getByRole('link', {
+      name: displayNameAuthor,
+    });
+    const linkCategoryNext = screen.getByRole('link', {
+      name: displayName,
+    });
+
+    expect(linkAuthor).toHaveAttribute('href', `/author/${slugAuthor}`);
+    expect(linkCategoryNext).toHaveAttribute('href', `/category/${slug}`);
   });
 
   it('should render formated date', () => {

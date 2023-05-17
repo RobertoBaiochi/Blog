@@ -13,17 +13,19 @@ export default {
     displayName: 'Roberto Baiochi',
     slug: 'roberto-baiochi',
   },
-  categories: [
-    {
-      id: '1',
-      displayName: 'ReactJs',
-      slug: 'react-js',
-    },
-    {
-      id: '2',
-      displayName: 'NextJs',
-      slug: 'next-js',
-    },
-  ],
+  categories: {
+    data: [
+      {
+        id: '1',
+        displayName: 'ReactJs',
+        slug: 'react-js',
+      },
+      {
+        id: '2',
+        displayName: 'NextJs',
+        slug: 'next-js',
+      },
+    ],
+  },
   createdAt: '2023-05-09T04:49:38.694Z',
 };

@@ -13,13 +13,11 @@ const MenuLink = ({ children, link, newTab = false }: MenuLinkProps) => {
   const nextLink = link.match(/^\//) ? true : false;
 
   if (nextLink) {
-    if (nextLink) {
-      return (
-        <Link href={link} passHref>
-          <Styled.Container target={target}>{children}</Styled.Container>
-        </Link>
-      );
-    }
+    return (
+      <Link href={link} passHref>
+        <Styled.Container target={target}>{children}</Styled.Container>
+      </Link>
+    );
   }
 
   return (

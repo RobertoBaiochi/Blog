@@ -1,7 +1,7 @@
 export type Metadata = {
   data: [
     {
-      id: string;
+      id: number;
       attributes: {
         displayName: string;
         slug: string;

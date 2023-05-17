@@ -1,8 +1,8 @@
-export type CoverProps = {
+export type StrapiImage = {
   cover: {
     data: [
       {
-        id: number;
+        id: string;
         attributes: {
           alternativeText: string;
           url: string;
