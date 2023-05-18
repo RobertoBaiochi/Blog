@@ -12,7 +12,11 @@ describe('<ArticleMeta />', () => {
     renderTheme(<ArticleMeta {...props} />);
     const {
       categories,
-      author: { displayNameAuthor, slugAuthor },
+      author: {
+        data: {
+          attributes: { displayName: displayNameAuthor, slug: slugAuthor },
+        },
+      },
     } = props;
     const {
       attributes: { displayName, slug },

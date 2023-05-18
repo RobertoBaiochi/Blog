@@ -1,37 +1,31 @@
 import { Wrapper } from './styles';
-
-import { ArticleHeaderProps } from '../ArticleHeader';
-
-
-import ArticleHeader from '../ArticleHeader';
+import ArticleHeader, { ArticleHeaderProps } from '../ArticleHeader';
 import HtmlComponent from '../HtmlComponent';
+import { Content } from '../..content/shared-typed/content';
 
-export type PostProps = ArticleHeaderProps & {
-  content: string;
-};
+export type PostProps = ArticleHeaderProps & Content;
 
 const Post = ({
-  title,
-  excerpt,
-  cover,
   author,
   categories,
+  cover,
   createdAt,
+  excerpt,
+  title,
   content,
-  id,
 }: PostProps) => {
   return (
     <Wrapper>
       <ArticleHeader
         author={author}
         categories={categories}
-        createdAt={createdAt}
         cover={cover}
-        title={title}
+        createdAt={createdAt}
         excerpt={excerpt}
-        id={id}
+        title={title}
       />
-      <HtmlComponent html={content} />
+
+      <HtmlComponent content={content} />
     </Wrapper>
   );
 };

@@ -1,20 +1,19 @@
-import { PostProps } from '.';
 import { data } from '../../api/data.json';
+import { PostProps } from '.';
 
 const { posts } = data;
-
-const { id, createdAt, attributes } = posts.data[0];
-
-const { author, categories, content, cover, excerpt, slug, title } = attributes;
+const {
+  id,
+  attributes: { title, excerpt, cover, author, categories, createdAt, content },
+} = posts.data[0];
 
 export default {
   id,
+  title,
+  excerpt,
+  cover,
   author,
   categories,
-  content,
-  cover,
-  excerpt,
-  slug,
-  title,
   createdAt,
-} as PostProps;
+  content,
+} as unknown as PostProps;

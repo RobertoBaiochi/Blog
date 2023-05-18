@@ -11,12 +11,14 @@ describe('<ArticleHeader />', () => {
   it('should render heading, excerpt, cover img and meta', () => {
     renderTheme(<ArticleHeader {...props} />);
 
+    const { alternativeText } = props.cover.data[0].attributes;
+
     const title = screen.getByRole('heading', {
       name: props.title,
     });
 
     const img = screen.getByRole('img', {
-      name: 'altText',
+      name: alternativeText,
     });
 
     const excerpt = screen.getByText(props.excerpt);

@@ -1,5 +1,10 @@
 export type Author = {
-  idAuthor: number;
-  displayNameAuthor: string;
-  slugAuthor: string;
+  data: {
+    id: string;
+    attributes: {
+      displayName: string;
+      slug: string;
+      createdAt: string;
+    };
+  };
 };

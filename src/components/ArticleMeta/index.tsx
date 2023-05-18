@@ -1,6 +1,6 @@
 import { formatDate } from '../../utils/format-date';
-import { Author } from '../shared-typed/author';
-import { Category } from '../shared-typed/category';
+import { Author } from '../../shared-typed/author';
+import { Category } from '../../shared-typed/category';
 import { Wrapper } from './styles';
 
 export type ArticleMetaProps = {
@@ -10,11 +10,14 @@ export type ArticleMetaProps = {
 };
 
 const ArticleMeta = ({ createdAt, author, categories }: ArticleMetaProps) => {
+  const {
+    attributes: { displayName: displayNameAuthor, slug: slugAuthor },
+  } = author.data;
   return (
     <Wrapper>
       <p>
         <span>Por </span>
-        <a href={`/author/${author.slugAuthor}`}>{author.displayNameAuthor}</a>
+        <a href={`/author/${slugAuthor}`}>{displayNameAuthor}</a>
         <span className="separator"> | </span>
         <time dateTime={createdAt}>{formatDate(createdAt)}</time>
         <span className="separator"> | </span>

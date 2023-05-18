@@ -3,22 +3,22 @@
 exports[`<ArticleHeader /> should render heading, excerpt, cover img and meta 1`] = `
 <div>
   <header
-    class="sc-bd24d15e-0 kcXlxA"
+    class="sc-6eee0130-0 dnaAto"
   >
     <h3
-      class="sc-45008c58-0 keulhw"
+      class="sc-b5aaf39e-0 jNSrfn"
     >
-      O plano para o React 18
+      Usando o Canvas para criar gráficos em JavaScript
     </h3>
     <p
-      class="sc-bd24d15e-1 ckGDJF"
+      class="sc-6eee0130-1 hdTTeF"
     >
-      Essas atualizações são destinadas principalmente aos mantenedores de bibliotecas de terceiros. Se você está aprendendo, ensinando ou usando o React para criar aplicações voltadas para o usuário, pode seguramente ignorar este post. Mas você é bem vindo para acompanhar as discussões no Grupo de Trabalho React 18 se estiver curioso!
+      O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
     </p>
     <img
-      alt="altText"
-      class="sc-bd24d15e-2 ktsHcQ"
-      src="/static/images/capa.jpg"
+      alt="praia vista de cima, água cor vende escuro e rochas"
+      class="sc-6eee0130-2 eYvAPI"
+      src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
     />
     <div
       class="sc-7c55c9a4-0 bRvXpo"
@@ -28,9 +28,9 @@ exports[`<ArticleHeader /> should render heading, excerpt, cover img and meta 1`
           Por 
         </span>
         <a
-          href="/author/roberto-baiochi"
+          href="/author/marcela-strug"
         >
-          Roberto Baiochi
+          Marcela Strug
         </a>
         <span
           class="separator"
@@ -38,7 +38,7 @@ exports[`<ArticleHeader /> should render heading, excerpt, cover img and meta 1`
            | 
         </span>
         <time
-          datetime="2023-05-09T04:49:38.694Z"
+          datetime="2023-05-09T04:33:33.718Z"
         >
           9 de mai. de 2023
         </time>
@@ -52,16 +52,9 @@ exports[`<ArticleHeader /> should render heading, excerpt, cover img and meta 1`
         >
           <span>
             <a
-              href="/category/react-js"
+              href="/category/java-script"
             >
-              ReactJs
-            </a>
-          </span>
-          <span>
-            <a
-              href="/category/next-js"
-            >
-              NextJs
+              JavaScript
             </a>
           </span>
         </span>

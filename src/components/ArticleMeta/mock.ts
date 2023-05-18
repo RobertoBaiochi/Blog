@@ -4,25 +4,12 @@ import { data } from '../../api/data.json';
 const { posts } = data;
 
 const {
-  attributes: {
-    createdAt,
-    author: {
-      data: {
-        id: idAuthor,
-        attributes: { displayName: displayNameAuthor, slug: slugAuthor },
-      },
-    },
-    categories,
-  },
+  attributes: { createdAt, author, categories },
 } = posts.data[1];
 
 export default {
   createdAt,
-  author: {
-    idAuthor,
-    displayNameAuthor,
-    slugAuthor,
-  },
+  author,
   categories,
 } as unknown as ArticleMetaProps;
 

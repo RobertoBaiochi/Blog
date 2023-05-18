@@ -3,7 +3,7 @@
 exports[`<Header /> should match snapshot 1`] = `
 <div>
   <header
-    class="sc-3dbff527-0 glAzLN"
+    class="sc-3dbff527-0 gppyNM"
   >
     <a
       href="/"
@@ -22,7 +22,7 @@ exports[`<Header /> should match snapshot 1`] = `
       class="sc-3dbff527-1 iryleV"
     >
       <h2
-        class="sc-45008c58-0 idwYbA"
+        class="sc-b5aaf39e-0 kQHlLj"
       >
         Console.Blog
       </h2>

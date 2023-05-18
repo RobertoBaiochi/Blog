@@ -1,10 +1,7 @@
 import * as Styled from './styles';
+import { Content } from '../../shared-typed/content';
 
-export type HtmlComponentProps = {
-  content: string;
-};
-
-const HtmlComponent = ({ content }: HtmlComponentProps) => {
+const HtmlComponent = ({ content }: Content) => {
   return <Styled.Container dangerouslySetInnerHTML={{ __html: content }} />;
 };
 
