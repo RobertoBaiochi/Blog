@@ -3,8 +3,8 @@ import { Title as HeadingStyles } from '../Heading/styles';
 
 export const Wrapper = styled.header`
   ${({ theme }) => css`
-    padding-bottom: ${theme.spacing.small};
-    margin-bottom: ${theme.spacing.small};
+    padding-bottom: ${theme.spacing.xlarge};
+    margin-bottom: ${theme.spacing.xlarge};
     border-bottom: 0.1rem solid ${theme.colors.mediumGray};
 
     ${HeadingStyles} {
@@ -17,6 +17,7 @@ export const Wrapper = styled.header`
 export const Excerpt = styled.p`
   ${({ theme }) => css`
     margin: ${theme.spacing.medium} 0;
+    font-size: ${theme.font.sizes.medium};
   `};
 `;
 

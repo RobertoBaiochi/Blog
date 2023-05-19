@@ -23,7 +23,7 @@ const LogoLink = ({
     return (
       <Link href={link} passHref target={target}>
         <Styled.Container>
-          {!!srcImg && <img src={srcImg} alt={text} />}
+          {!!srcImg && <Styled.ImageLogo src={srcImg} alt={text} />}
           {!srcImg && (
             <Heading size="small" uppercase>
               {text}
@@ -36,7 +36,7 @@ const LogoLink = ({
 
   return (
     <Styled.ContainerLink href={link} target={target}>
-      {!!srcImg && <img src={srcImg} alt={text} />}
+      {!!srcImg && <Styled.ImageLogo src={srcImg} alt={text} />}
       {!srcImg && (
         <Heading size="small" uppercase>
           {text}

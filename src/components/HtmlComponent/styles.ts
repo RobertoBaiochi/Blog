@@ -2,10 +2,11 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.medium};
+    font-size: calc(${theme.font.sizes.small} + 0.2rem);
+    line-height: 1.5;
 
     p {
-      margin: ${theme.spacing.large} 0;
+      margin: ${theme.spacing.medium} 0;
     }
 
     a,
@@ -20,21 +21,35 @@ export const Container = styled.p`
       filter: brightness(50%);
     }
 
+    code {
+      font-family: monospace;
+      color: ${theme.colors.secondary};
+      font-size: ${theme.font.sizes.small};
+      background: ${theme.colors.mediumGray};
+      padding: 0.2rem;
+      margin: 0.2rem;
+    }
+
     pre {
       width: 100%;
       background: ${theme.colors.primary};
       padding: ${theme.spacing.medium};
       font-family: monospace;
       color: ${theme.colors.white};
-      margin: ${theme.spacing.xlarge} 0;
+      margin: ${theme.spacing.medium} 0;
       overflow-x: auto;
       font-size: ${theme.font.sizes.small};
+    }
+
+    pre code {
+      color: inherit;
+      background: inherit;
     }
 
     .image {
       background: ${theme.colors.mediumGray};
       line-height: 0;
-      margin: ${theme.spacing.xlarge} 0;
+      margin: ${theme.spacing.medium} 0;
     }
 
     .image figcaption {
@@ -47,7 +62,7 @@ export const Container = styled.p`
     .image-style-side {
       max-width: 50%;
       float: right;
-      margin: ${theme.spacing.medium};
+      margin: ${theme.spacing.medium} 0;
     }
 
     hr {
@@ -56,7 +71,7 @@ export const Container = styled.p`
     }
 
     ul, ol {
-      margin: ${theme.spacing.xlarge};
+      margin: ${theme.spacing.medium} ${theme.spacing.xlarge};
     }
 
     .table {
@@ -74,6 +89,15 @@ export const Container = styled.p`
     table th {
       padding: ${theme.spacing.small};
       border: 0.1rem solid ${theme.colors.mediumGray};
+    }
+
+    blockquote {
+      border-left: 0.5rem solid ${theme.colors.secondary};
+      color: ${theme.colors.darkerGray};
+      filter: brightness(80%);
+      padding-left: ${theme.spacing.medium};
+      font-style: italic;
+      margin: ${theme.spacing.medium};
     }
 
 

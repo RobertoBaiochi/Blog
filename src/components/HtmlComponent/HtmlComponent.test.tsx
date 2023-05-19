@@ -15,7 +15,7 @@ describe('<TextComponent />', () => {
     );
     expect(container.firstChild).toMatchInlineSnapshot(`
       <p
-        class="sc-cc188149-0 iNGnkB"
+        class="sc-fcfcec56-0 cfAkIA"
       >
         <b>
           Children

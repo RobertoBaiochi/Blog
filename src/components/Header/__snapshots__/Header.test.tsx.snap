@@ -10,10 +10,11 @@ exports[`<Header /> should match snapshot 1`] = `
       target="_self"
     >
       <div
-        class="sc-27d34c3d-1 eWEQKH"
+        class="sc-d76a3d34-1 jbTDAv"
       >
         <img
           alt="Console.Blog"
+          class="sc-d76a3d34-2 gsyyHr"
           src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
         />
       </div>

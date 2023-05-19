@@ -1,7 +1,8 @@
 import { Wrapper } from './styles';
 import ArticleHeader, { ArticleHeaderProps } from '../ArticleHeader';
 import HtmlComponent from '../HtmlComponent';
-import { Content } from '../..content/shared-typed/content';
+import { Content } from '../../shared-typed/content';
+import { PostContainer } from '../PostContainer';
 
 export type PostProps = ArticleHeaderProps & Content;
 
@@ -16,16 +17,20 @@ const Post = ({
 }: PostProps) => {
   return (
     <Wrapper>
-      <ArticleHeader
-        author={author}
-        categories={categories}
-        cover={cover}
-        createdAt={createdAt}
-        excerpt={excerpt}
-        title={title}
-      />
+      <PostContainer size="max">
+        <ArticleHeader
+          author={author}
+          categories={categories}
+          cover={cover}
+          createdAt={createdAt}
+          excerpt={excerpt}
+          title={title}
+        />
+      </PostContainer>
 
-      <HtmlComponent content={content} />
+      <PostContainer size="content">
+        <HtmlComponent content={content} />
+      </PostContainer>
     </Wrapper>
   );
 };

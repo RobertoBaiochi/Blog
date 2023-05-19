@@ -6,12 +6,6 @@ export const ContainerLink = styled.a`
     align-items: center;
     text-decoration: none;
     color: inherit;
-
-    > img {
-      width: 15rem;
-      height: 15rem;
-      border-radius: 50%;
-    }
   `};
 `;
 
@@ -21,11 +15,13 @@ export const Container = styled.div`
     align-items: center;
     text-decoration: none;
     color: inherit;
+  `};
+`;
 
-    > img {
-      width: 15rem;
-      height: 15rem;
-      border-radius: 50%;
-    }
+export const ImageLogo = styled.img`
+  ${() => css`
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
   `};
 `;
