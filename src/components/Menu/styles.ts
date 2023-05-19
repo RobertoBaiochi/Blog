@@ -45,7 +45,7 @@ export const Nav = styled.nav`
   `};
 `;
 
-export const LogoContainer = styled.nav`
+export const LogoContainer = styled.div`
   ${({ theme }) => css`
       display: flex;
       justify-content: center;

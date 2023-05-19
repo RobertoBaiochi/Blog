@@ -19,7 +19,7 @@ export type MenuProps = {
   logo: Logo;
 };
 
-const Menu = ({ menuLink, logo, blogName }: MenuProps) => {
+const Menu = ({ menuLink = [], logo, blogName }: MenuProps) => {
   const { url } = logo.data.attributes;
 
   const [menuVisible, setMenuVisible] = useState(false);
@@ -41,7 +41,7 @@ const Menu = ({ menuLink, logo, blogName }: MenuProps) => {
         {!menuVisible && <MenuIcon aria-label="Open menu" />}
       </OpenClose>
 
-      <Wrapper menuVisible={menuVisible}>
+      <Wrapper menuVisible={menuVisible} aria-hidden={!menuVisible}>
         <Nav>
           <LogoContainer>
             <LogoLink link="/" text={blogName} srcImg={url} />
