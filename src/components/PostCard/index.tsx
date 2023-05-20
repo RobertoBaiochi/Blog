@@ -5,13 +5,17 @@ import { StrapiImage } from '@/shared-typed/cover';
 
 export type PostCardProps = {
   id: number;
-  title: string;
-  slug: string;
-  excerpt: string;
-  cover: StrapiImage;
+  attributes: {
+    title: string;
+    slug: string;
+    excerpt: string;
+    cover: StrapiImage;
+  };
 };
 
-const PostCard = ({ cover, excerpt, title, slug }: PostCardProps) => {
+const PostCard = ({
+  attributes: { cover, slug, excerpt, title },
+}: PostCardProps) => {
   const {
     attributes: { alternativeText, url },
   } = cover.data[0];

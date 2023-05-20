@@ -1,27 +1,26 @@
-import { Posts } from '../../shared-typed/posts';
-import PostCard from '../PostCard';
-import { Wrapper } from './styles';
+import PostCard, { PostCardProps } from '../PostCard';
+import { Wrapper, NotFound, GridContainer } from './styles';
 
-const PostGrid = ({ data }: Posts) => {
+export type PostGridProps = {
+  posts?: PostCardProps[];
+};
+
+const PostGrid = ({ posts = [] }: PostGridProps) => {
   return (
     <Wrapper>
-      {data.map((post) => {
-        const {
-          id,
-          attributes: { title, cover, excerpt, slug },
-        } = post;
+      {posts.length === 0 && <NotFound>Nenhum post encontrado aqui</NotFound>}
 
-        return (
-          <PostCard
-            key={`${slug}+${id}`}
-            id={id}
-            cover={cover}
-            slug={slug}
-            title={title}
-            excerpt={excerpt}
-          />
-        );
-      })}
+      <GridContainer>
+        {posts.length > 0 &&
+          posts.map((post) => {
+            const {
+              id,
+              attributes: { slug },
+            } = post;
+
+            return <PostCard key={`${slug}+${id}`} {...post} />;
+          })}
+      </GridContainer>
     </Wrapper>
   );
 };

@@ -1,7 +1,8 @@
 export type StrapiImage = {
   data: [
     {
-      id: string;
+      key: string;
+      id: number;
       attributes: {
         alternativeText: string;
         url: string;

@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
     ${HeadingStyles} {
       margin: 0;
       margin: ${theme.spacing.small} 0;
+      padding-inline: ${theme.spacing.xsmall};
     }
 
     a {
@@ -31,6 +32,8 @@ export const Wrapper = styled.div`
 
 export const Cover = styled.img`
   ${() => css`
+    width: 100%;
+    height: 200px;
     transition: all 300ms ease-in-out;
   `}
 `;
@@ -38,6 +41,7 @@ export const Cover = styled.img`
 export const Excerpt = styled.p`
   ${({ theme }) => css`
     margin: 0;
-    color: ${theme.colors.darkText}
+    color: ${theme.colors.darkText};
+    padding-inline: ${theme.spacing.xsmall};
   `};
 `;
