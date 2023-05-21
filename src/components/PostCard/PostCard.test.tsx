@@ -9,7 +9,9 @@ const props: PostCardProps = mock;
 describe('<PostCard />', () => {
   it('should render heading, cover and excerpt', () => {
     renderTheme(<PostCard {...props} />);
-    const { title, excerpt, slug, cover } = props;
+    const {
+      attributes: { cover, excerpt, slug, title },
+    } = props;
     const {
       attributes: { alternativeText },
     } = cover.data[0];

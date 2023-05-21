@@ -18,7 +18,7 @@ export default {
 
 export const Template: StoryFn<ArticleHeaderProps> = (args) => {
   return (
-    <div>
+    <div style={{ maxWidth: '96rem', marginInline: 'auto' }}>
       <ArticleHeader {...args} />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero animi, ad

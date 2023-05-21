@@ -3,14 +3,14 @@
 exports[`<PostCard /> should match snapshot 1`] = `
 <div>
   <div
-    class="sc-b47282fe-0 dBjHuz"
+    class="sc-12652a66-0 epxRKc"
   >
     <a
       href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
     >
       <img
         alt="cidade na beira da praia com prédios ao final da tarde"
-        class="sc-b47282fe-1 iUlkYd"
+        class="sc-12652a66-1 iYcwyv"
         src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
       />
     </a>
@@ -24,7 +24,7 @@ exports[`<PostCard /> should match snapshot 1`] = `
       </a>
     </h2>
     <p
-      class="sc-b47282fe-2 kEHSMG"
+      class="sc-12652a66-2 jhiHKy"
     >
       Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
     </p>

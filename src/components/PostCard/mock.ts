@@ -9,8 +9,10 @@ const {
 
 export default {
   id,
-  title,
-  slug,
-  excerpt,
-  cover,
+  attributes: {
+    title,
+    slug,
+    excerpt,
+    cover,
+  },
 } as unknown as PostCardProps;

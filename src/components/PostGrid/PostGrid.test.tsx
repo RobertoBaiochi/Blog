@@ -6,9 +6,25 @@ import mock from './mock';
 
 const props: PostGridProps = mock;
 describe('<PostGrid />', () => {
-  it('should render', () => {
-    renderTheme(<PostGrid {...props} />);
+  it('should render not render posts', () => {
+    renderTheme(<PostGrid {...props} posts={undefined} />);
 
-    expect(screen.getByRole('heading', { name: 'Oi' })).toBeInTheDocument();
+    expect(screen.getByText(/Nenhum post/i)).toBeInTheDocument();
+  });
+
+  it('should render three posts', () => {
+    const { container } = renderTheme(<PostGrid {...props} />);
+
+    expect(screen.queryByText(/Nenhum post/i)).not.toBeInTheDocument();
+
+    expect(screen.getAllByRole('heading')).toHaveLength(3);
+    expect(screen.getAllByRole('img')).toHaveLength(3);
+    expect(container.querySelectorAll('p')).toHaveLength(3);
+  });
+
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<PostGrid {...props} />);
+
+    expect(container).toMatchSnapshot();
   });
 });

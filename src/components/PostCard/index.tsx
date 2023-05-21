@@ -13,9 +13,8 @@ export type PostCardProps = {
   };
 };
 
-const PostCard = ({
-  attributes: { cover, slug, excerpt, title },
-}: PostCardProps) => {
+const PostCard = ({ attributes }: PostCardProps) => {
+  const { cover, title, slug, excerpt } = attributes;
   const {
     attributes: { alternativeText, url },
   } = cover.data[0];

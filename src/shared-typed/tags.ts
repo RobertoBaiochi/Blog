@@ -1,10 +1,10 @@
-export type StrapiImage = {
+export type Tags = {
   data: [
     {
       id: number;
       attributes: {
-        alternativeText: string;
-        url: string;
+        displayName: string;
+        slug: string;
         createdAt: string;
       };
     },
