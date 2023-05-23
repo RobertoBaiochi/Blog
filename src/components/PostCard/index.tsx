@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Cover, Excerpt, Wrapper } from './styles';
 import Heading from '../Heading';
-import { StrapiImage } from '@/shared-typed/cover';
+import { StrapiImage } from '../../shared-typed/cover';
 
 export type PostCardProps = {
   id: number;
@@ -14,7 +14,7 @@ export type PostCardProps = {
 };
 
 const PostCard = ({ attributes }: PostCardProps) => {
-  const { cover, title, slug, excerpt } = attributes;
+  const { cover, excerpt, slug, title } = attributes;
   const {
     attributes: { alternativeText, url },
   } = cover.data[0];

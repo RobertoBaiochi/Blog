@@ -6,27 +6,27 @@ exports[`<PostCard /> should match snapshot 1`] = `
     class="sc-12652a66-0 epxRKc"
   >
     <a
-      href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+      href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
     >
       <img
-        alt="cidade na beira da praia com prédios ao final da tarde"
+        alt="praia vista de cima, água cor vende escuro e rochas"
         class="sc-12652a66-1 iYcwyv"
-        src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+        src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
       />
     </a>
     <h2
       class="sc-b5aaf39e-0 kQHlLj"
     >
       <a
-        href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+        href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
       >
-        Como criar um aplicativo React com suporte a internacionalização (i18n)
+        Usando o Canvas para criar gráficos em JavaScript
       </a>
     </h2>
     <p
       class="sc-12652a66-2 jhiHKy"
     >
-      Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+      O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
     </p>
   </div>
 </div>

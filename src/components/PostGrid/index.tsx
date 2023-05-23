@@ -17,7 +17,6 @@ const PostGrid = ({ posts = [] }: PostGridProps) => {
               id,
               attributes: { slug },
             } = post;
-
             return <PostCard key={`${slug}+${id}`} {...post} />;
           })}
       </GridContainer>

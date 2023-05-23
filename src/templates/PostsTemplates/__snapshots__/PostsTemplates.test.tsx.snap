@@ -1,0 +1,1603 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostsTemplate /> should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-ad7b7792-0"
+  >
+    <button
+      aria-label="Open or close menu"
+      class="sc-1d7c7eec-3 hSTNDk"
+      title="Open or close menu"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="StyledIconBase-sc-ea9ulj-0 kAmBDe"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </button>
+    <div
+      aria-hidden="true"
+      class="sc-1d7c7eec-0 gHnYZA"
+    >
+      <nav
+        class="sc-1d7c7eec-1 dfZoZt"
+      >
+        <div
+          class="sc-1d7c7eec-2 fgrZaP"
+        >
+          <a
+            href="/"
+            target="_self"
+          >
+            <div
+              class="sc-d76a3d34-1 jbTDAv"
+            >
+              <img
+                alt="Console.Blog"
+                class="sc-d76a3d34-2 gsyyHr"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
+              />
+            </div>
+          </a>
+        </div>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link1"
+          target="_self"
+        >
+          Link1
+        </a>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link2"
+          target="_self"
+        >
+          Link2
+        </a>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link3"
+          target="_self"
+        >
+          Link3
+        </a>
+      </nav>
+    </div>
+    <div
+      class="sc-ad7b7792-1 gmYIFW"
+    >
+      <header
+        class="sc-3dbff527-0 gppyNM"
+      >
+        <a
+          href="/"
+          target="_self"
+        >
+          <div
+            class="sc-d76a3d34-1 jbTDAv"
+          >
+            <img
+              alt="Console.Blog"
+              class="sc-d76a3d34-2 gsyyHr"
+              src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
+            />
+          </div>
+        </a>
+        <div
+          class="sc-3dbff527-1 iryleV"
+        >
+          <h2
+            class="sc-b5aaf39e-0 kQHlLj"
+          >
+            Console.Blog
+          </h2>
+          <p>
+            Debuggando passo a passo do conhecimento
+          </p>
+        </div>
+      </header>
+    </div>
+    <div
+      class="sc-ad7b7792-2 cBZcj"
+    >
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-ad7b7792-3 dMGifk"
+    >
+      <footer
+        class="sc-32211b0-0 gGtWnP"
+      >
+        <p
+          class="sc-fcfcec56-0 cfAkIA"
+        >
+          <p>
+            <a
+              href="https://robertobaiochi.com.br"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Desenvolvido e criado por Roberto Baiochi
+            </a>
+          </p>
+        </p>
+      </footer>
+    </div>
+    <a
+      aria-label="Go to top"
+      class="sc-dda3f152-0 gMiRMa"
+      href="#"
+      title="Go to top"
+    >
+      <svg
+        aria-hidden="true"
+        class="StyledIconBase-sc-ea9ulj-0 kAmBDe"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<PostsTemplate /> should match snapshot without post 1`] = `
+<div>
+  <div
+    class="sc-ad7b7792-0"
+  >
+    <button
+      aria-label="Open or close menu"
+      class="sc-1d7c7eec-3 hSTNDk"
+      title="Open or close menu"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="StyledIconBase-sc-ea9ulj-0 kAmBDe"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </button>
+    <div
+      aria-hidden="true"
+      class="sc-1d7c7eec-0 gHnYZA"
+    >
+      <nav
+        class="sc-1d7c7eec-1 dfZoZt"
+      >
+        <div
+          class="sc-1d7c7eec-2 fgrZaP"
+        >
+          <a
+            href="/"
+            target="_self"
+          >
+            <div
+              class="sc-d76a3d34-1 jbTDAv"
+            >
+              <img
+                alt="Console.Blog"
+                class="sc-d76a3d34-2 gsyyHr"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
+              />
+            </div>
+          </a>
+        </div>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link1"
+          target="_self"
+        >
+          Link1
+        </a>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link2"
+          target="_self"
+        >
+          Link2
+        </a>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link3"
+          target="_self"
+        >
+          Link3
+        </a>
+      </nav>
+    </div>
+    <div
+      class="sc-ad7b7792-1 gmYIFW"
+    >
+      <header
+        class="sc-3dbff527-0 gppyNM"
+      >
+        <a
+          href="/"
+          target="_self"
+        >
+          <div
+            class="sc-d76a3d34-1 jbTDAv"
+          >
+            <img
+              alt="Console.Blog"
+              class="sc-d76a3d34-2 gsyyHr"
+              src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
+            />
+          </div>
+        </a>
+        <div
+          class="sc-3dbff527-1 iryleV"
+        >
+          <h2
+            class="sc-b5aaf39e-0 kQHlLj"
+          >
+            Console.Blog
+          </h2>
+          <p>
+            Debuggando passo a passo do conhecimento
+          </p>
+        </div>
+      </header>
+    </div>
+    <div
+      class="sc-ad7b7792-2 cBZcj"
+    >
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <p
+          class="sc-d5c95ca7-1 jcbmrp"
+        >
+          Nenhum post encontrado aqui
+        </p>
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        />
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <p
+          class="sc-d5c95ca7-1 jcbmrp"
+        >
+          Nenhum post encontrado aqui
+        </p>
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        />
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <p
+          class="sc-d5c95ca7-1 jcbmrp"
+        >
+          Nenhum post encontrado aqui
+        </p>
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        />
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <p
+          class="sc-d5c95ca7-1 jcbmrp"
+        >
+          Nenhum post encontrado aqui
+        </p>
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        />
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <p
+          class="sc-d5c95ca7-1 jcbmrp"
+        >
+          Nenhum post encontrado aqui
+        </p>
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        />
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <p
+          class="sc-d5c95ca7-1 jcbmrp"
+        >
+          Nenhum post encontrado aqui
+        </p>
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-ad7b7792-3 dMGifk"
+    >
+      <footer
+        class="sc-32211b0-0 gGtWnP"
+      >
+        <p
+          class="sc-fcfcec56-0 cfAkIA"
+        >
+          <p>
+            <a
+              href="https://robertobaiochi.com.br"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Desenvolvido e criado por Roberto Baiochi
+            </a>
+          </p>
+        </p>
+      </footer>
+    </div>
+    <a
+      aria-label="Go to top"
+      class="sc-dda3f152-0 gMiRMa"
+      href="#"
+      title="Go to top"
+    >
+      <svg
+        aria-hidden="true"
+        class="StyledIconBase-sc-ea9ulj-0 kAmBDe"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<PostsTemplate /> should render no on snapshot 1`] = `
+<div>
+  <div
+    class="sc-ad7b7792-0"
+  >
+    <button
+      aria-label="Open or close menu"
+      class="sc-1d7c7eec-3 hSTNDk"
+      title="Open or close menu"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="StyledIconBase-sc-ea9ulj-0 kAmBDe"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </button>
+    <div
+      aria-hidden="true"
+      class="sc-1d7c7eec-0 gHnYZA"
+    >
+      <nav
+        class="sc-1d7c7eec-1 dfZoZt"
+      >
+        <div
+          class="sc-1d7c7eec-2 fgrZaP"
+        >
+          <a
+            href="/"
+            target="_self"
+          >
+            <div
+              class="sc-d76a3d34-1 jbTDAv"
+            >
+              <img
+                alt="Console.Blog"
+                class="sc-d76a3d34-2 gsyyHr"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
+              />
+            </div>
+          </a>
+        </div>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link1"
+          target="_self"
+        >
+          Link1
+        </a>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link2"
+          target="_self"
+        >
+          Link2
+        </a>
+        <a
+          class="sc-6d3caf5b-0 gZhbvo"
+          href="#link3"
+          target="_self"
+        >
+          Link3
+        </a>
+      </nav>
+    </div>
+    <div
+      class="sc-ad7b7792-1 gmYIFW"
+    >
+      <header
+        class="sc-3dbff527-0 gppyNM"
+      >
+        <a
+          href="/"
+          target="_self"
+        >
+          <div
+            class="sc-d76a3d34-1 jbTDAv"
+          >
+            <img
+              alt="Console.Blog"
+              class="sc-d76a3d34-2 gsyyHr"
+              src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608645/carta_410436ad20.jpg"
+            />
+          </div>
+        </a>
+        <div
+          class="sc-3dbff527-1 iryleV"
+        >
+          <h2
+            class="sc-b5aaf39e-0 kQHlLj"
+          >
+            Console.Blog
+          </h2>
+          <p>
+            Debuggando passo a passo do conhecimento
+          </p>
+        </div>
+      </header>
+    </div>
+    <div
+      class="sc-ad7b7792-2 cBZcj"
+    >
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-d5c95ca7-0 gDQVIO"
+      >
+        <div
+          class="sc-d5c95ca7-2 eGbpfL"
+        >
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+            >
+              <img
+                alt="cidade na beira da praia com prédios ao final da tarde"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683607135/caio_silva_b1_BK_Bsi_JGI_unsplash_761a915801.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-react-com-suporte-a-internacionalizacao-i18n"
+              >
+                Como criar um aplicativo React com suporte a internacionalização (i18n)
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo mostra como adicionar suporte a internacionalização em um aplicativo React usando as bibliotecas i18next e react-i18next. Inclui exemplos de tradução de texto e de como permitir que o usuário altere o idioma do aplicativo.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+            >
+              <img
+                alt="praia vista de cima, água cor vende escuro e rochas"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683581086/adam_seckel_xhaz6_Nn_VT_64_unsplash_ad1c1db2e6.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/usando-o-canvas-para-criar-graficos-em-java-script"
+              >
+                Usando o Canvas para criar gráficos em JavaScript
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              O artigo apresenta como usar a API Canvas em HTML e JavaScript para criar gráficos personalizados com estilização e interatividade, resultando em visualizações de dados impressionantes e envolventes.
+            </p>
+          </div>
+          <div
+            class="sc-12652a66-0 epxRKc"
+          >
+            <a
+              href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+            >
+              <img
+                alt="campo com montanhas ao fundo em um dia nublado"
+                class="sc-12652a66-1 iYcwyv"
+                src="https://res.cloudinary.com/dfmbf9sae/image/upload/v1683608183/saira_G6jv_H_h_I5_Pc_unsplash_9938f8473d.jpg"
+              />
+            </a>
+            <h2
+              class="sc-b5aaf39e-0 kQHlLj"
+            >
+              <a
+                href="/post/como-criar-um-aplicativo-de-podcast-com-next-js"
+              >
+                Como criar um aplicativo de podcast com Next.js
+              </a>
+            </h2>
+            <p
+              class="sc-12652a66-2 jhiHKy"
+            >
+              Este artigo ensina como criar um aplicativo de podcast utilizando o framework Next.js. Ele aborda a criação de componentes reutilizáveis, a realização de solicitações de API e a implantação do aplicativo na AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-ad7b7792-3 dMGifk"
+    >
+      <footer
+        class="sc-32211b0-0 gGtWnP"
+      >
+        <p
+          class="sc-fcfcec56-0 cfAkIA"
+        >
+          <p>
+            <a
+              href="https://robertobaiochi.com.br"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Desenvolvido e criado por Roberto Baiochi
+            </a>
+          </p>
+        </p>
+      </footer>
+    </div>
+    <a
+      aria-label="Go to top"
+      class="sc-dda3f152-0 gMiRMa"
+      href="#"
+      title="Go to top"
+    >
+      <svg
+        aria-hidden="true"
+        class="StyledIconBase-sc-ea9ulj-0 kAmBDe"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
