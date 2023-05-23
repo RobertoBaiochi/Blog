@@ -5,37 +5,49 @@ import { Wrapper } from './styles';
 
 export type ArticleMetaProps = {
   createdAt: string;
-  author: Author;
-  categories: Category;
+  author?: Author;
+  categories?: Category[];
 };
 
-const ArticleMeta = ({ createdAt, author, categories }: ArticleMetaProps) => {
-  const {
-    attributes: { displayName: displayNameAuthor, slug: slugAuthor },
-  } = author.data;
+const ArticleMeta = ({
+  createdAt,
+  author = undefined,
+  categories = [],
+}: ArticleMetaProps) => {
   return (
     <Wrapper>
       <p>
-        <span>Por </span>
-        <a href={`/author/${slugAuthor}`}>{displayNameAuthor}</a>
-        <span className="separator"> | </span>
+        {typeof author !== 'undefined' && (
+          <>
+            <span>Por </span>
+            <a href={`/author/${author?.attributes.slug}`}>
+              {author?.attributes.displayName}
+            </a>
+            <span className="separator"> | </span>
+          </>
+        )}
+
         <time dateTime={createdAt}>{formatDate(createdAt)}</time>
-        <span className="separator"> | </span>
 
-        <span className="categories">
-          {categories.data.map((category) => {
-            const {
-              id,
-              attributes: { displayName, slug },
-            } = category;
+        {categories.length > 0 && (
+          <>
+            <span className="separator"> | </span>
+            <span className="categories">
+              {categories.map((category) => {
+                const {
+                  id,
+                  attributes: { displayName, slug },
+                } = category;
 
-            return (
-              <span key={`article-meta-cat-${id}`}>
-                <a href={`/category/${slug}`}>{displayName}</a>
-              </span>
-            );
-          })}
-        </span>
+                return (
+                  <span key={`article-meta-cat-${id}`}>
+                    <a href={`/category/${slug}`}>{displayName}</a>
+                  </span>
+                );
+              })}
+            </span>
+          </>
+        )}
       </p>
     </Wrapper>
   );

@@ -8,7 +8,7 @@ export type ArticleHeaderProps = {
   id?: string;
   title: string;
   excerpt: string;
-  cover: StrapiImage;
+  cover: StrapiImage[];
 } & ArticleMetaProps;
 
 const ArticleHeader = ({

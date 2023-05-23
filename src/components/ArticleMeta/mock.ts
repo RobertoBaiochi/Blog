@@ -1,16 +1,16 @@
 import { ArticleMetaProps } from './';
 import { data } from '../../api/data.json';
 
-const { posts } = data;
+// const { posts } = data;
 
-const {
-  attributes: { createdAt, author, categories },
-} = posts.data[1];
+// const {
+//   attributes: { createdAt, author, categories },
+// } = posts.data[1];
 
 export default {
-  createdAt,
-  author,
-  categories,
+  createdAt: data.posts.data[0].attributes.createdAt,
+  author: data.posts.data[0].attributes.author.data,
+  categories: data.posts.data[0].attributes.categories.data,
 } as unknown as ArticleMetaProps;
 
 // import { ArticleMetaProps } from '.';

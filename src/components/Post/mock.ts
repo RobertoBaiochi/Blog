@@ -4,7 +4,7 @@ import { PostProps } from '.';
 const { posts } = data;
 const {
   id,
-  attributes: { title, excerpt, cover, author, categories, createdAt, content },
+  attributes: { title, excerpt, cover, createdAt, content },
 } = posts.data[0];
 
 export default {
@@ -12,8 +12,8 @@ export default {
   title,
   excerpt,
   cover,
-  author,
-  categories,
+  author: data.posts.data[0].attributes.author.data,
+  categories: data.posts.data[0].attributes.categories.data,
   createdAt,
   content,
 } as unknown as PostProps;
