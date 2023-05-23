@@ -16,3 +16,11 @@ export const Template: StoryFn<PostTagsProps> = (args) => {
     </div>
   );
 };
+
+export const NoTags: StoryFn<PostTagsProps> = (args) => {
+  return (
+    <div>
+      <PostTags {...args} tags={undefined} />
+    </div>
+  );
+};

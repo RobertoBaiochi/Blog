@@ -3,14 +3,18 @@ import { Tags } from '../../shared-typed/tags';
 import { Wrapper } from './styles';
 
 export type PostTagsProps = {
-  tags: Tags;
+  tags?: Tags[];
 };
 
-const PostTags = ({ tags }: PostTagsProps) => {
+const PostTags = ({ tags = [] }: PostTagsProps) => {
+  if (tags.length === 0) {
+    return null;
+  }
+
   return (
     <Wrapper>
       tags:
-      {tags.data.map((tag) => {
+      {tags.map((tag) => {
         const {
           id,
           attributes: { slug, displayName },
