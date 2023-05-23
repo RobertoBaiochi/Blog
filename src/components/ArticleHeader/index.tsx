@@ -8,10 +8,11 @@ export type ArticleHeaderProps = {
   id?: string;
   title: string;
   excerpt: string;
-  cover: StrapiImage[];
+  cover: StrapiImage;
 } & ArticleMetaProps;
 
 const ArticleHeader = ({
+  id,
   title,
   excerpt,
   cover,
@@ -19,7 +20,7 @@ const ArticleHeader = ({
   categories,
   createdAt,
 }: ArticleHeaderProps) => {
-  const { alternativeText, url } = cover[0].attributes;
+  const { alternativeText, url } = cover.data[0].attributes;
   return (
     <Wrapper>
       <Heading as="h3" size="big">

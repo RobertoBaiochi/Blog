@@ -12,11 +12,6 @@ const PostsTemplate = ({ settings, posts = [] }: PostsTemplateProps) => {
   return (
     <BaseTemplate settings={settings}>
       <PostGrid posts={posts} />
-      <PostGrid posts={posts} />
-      <PostGrid posts={posts} />
-      <PostGrid posts={posts} />
-      <PostGrid posts={posts} />
-      <PostGrid posts={posts} />
     </BaseTemplate>
   );
 };
