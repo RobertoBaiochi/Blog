@@ -1,6 +1,6 @@
 import LogoLink from '../LogoLink';
 import MenuLink from '../MenuLink';
-import { Logo } from '../../shared-typed/logo';
+import { LogoStrapi } from '../../shared-typed/logo';
 import { Wrapper, OpenClose, LogoContainer, Nav } from './styles';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
@@ -16,7 +16,7 @@ export type MenuPropsLinks = {
 export type MenuProps = {
   menuLink: MenuPropsLinks[];
   blogName: string;
-  logo: Logo;
+  logo: LogoStrapi;
 };
 
 const Menu = ({ menuLink = [], logo, blogName }: MenuProps) => {

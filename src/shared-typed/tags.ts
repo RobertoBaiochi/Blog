@@ -1,4 +1,4 @@
-export type Tags = {
+export type TagsStrapi = {
   id: number;
   attributes: {
     displayName: string;

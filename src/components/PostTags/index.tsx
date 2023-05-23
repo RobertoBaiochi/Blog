@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { Tags } from '../../shared-typed/tags';
+import { TagsStrapi } from '../../shared-typed/tags';
 import { Wrapper } from './styles';
 
 export type PostTagsProps = {
-  tags?: Tags[];
+  tags?: TagsStrapi[];
 };
 
 const PostTags = ({ tags = [] }: PostTagsProps) => {

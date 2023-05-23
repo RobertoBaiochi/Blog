@@ -1,9 +1,7 @@
-export type Logo = {
-  data: {
-    id: number;
-    attributes: {
-      alternativeText: string;
-      url: string;
-    };
+export type LogoStrapi = {
+  id: number;
+  attributes: {
+    alternativeText: string;
+    url: string;
   };
 };
