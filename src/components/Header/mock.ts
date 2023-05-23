@@ -13,5 +13,5 @@ export default {
   id,
   blogName,
   blogDescription,
-  logo: data.setting.data.attributes.logo.data,
+  logo: data.setting.data.attributes.logo,
 } as unknown as HeaderProps;

@@ -19,7 +19,7 @@ describe('<Header />', () => {
     expect(altImage).toBeInTheDocument();
     expect(descriptionBlog).toBeInTheDocument();
     expect(blogTitle).toBeInTheDocument();
-    expect(image).toHaveAttribute('src', props.logo.attributes.url);
+    expect(image).toHaveAttribute('src', props.logo.data.attributes.url);
   });
 
   it('should render image only', () => {
@@ -31,7 +31,7 @@ describe('<Header />', () => {
     });
     const descriptionBlog = screen.queryByText(props.blogDescription);
 
-    expect(image).toHaveAttribute('src', props.logo.attributes.url);
+    expect(image).toHaveAttribute('src', props.logo.data.attributes.url);
     expect(blogTitle).not.toBeInTheDocument();
     expect(descriptionBlog).not.toBeInTheDocument();
   });

@@ -8,9 +8,20 @@ import mock from './mock';
 const props: BaseTemplateProps = mock;
 
 describe('<BaseTemplate />', () => {
-  it('should render', () => {
+  it('should render base elements', () => {
     renderTheme(<BaseTemplate {...props} />);
 
-    expect(screen.getByRole('heading', { name: 'Oi' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('img', { name: props.settings.blogName }),
+    ).toBeInTheDocument();
+    expect(screen.getByLabelText('Open or close menu')).toBeInTheDocument();
+    expect(screen.getByText(/Desenvolvido e criado/i)).toBeInTheDocument();
+    expect(screen.getByLabelText('Go to top')).toBeInTheDocument();
+  });
+
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<BaseTemplate {...props} />);
+
+    expect(container).toMatchSnapshot();
   });
 });

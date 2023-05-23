@@ -17,7 +17,9 @@ const Header = ({
   logo,
   showText = true,
 }: HeaderProps) => {
-  const { url } = logo.attributes;
+  const {
+    attributes: { url },
+  } = logo.data;
 
   return (
     <HeaderContainer>

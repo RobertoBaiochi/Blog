@@ -20,8 +20,9 @@ export type MenuProps = {
 };
 
 const Menu = ({ menuLink = [], logo, blogName }: MenuProps) => {
-  const { url } = logo.data.attributes;
-
+  const {
+    attributes: { url },
+  } = logo.data;
   const [menuVisible, setMenuVisible] = useState(false);
 
   const handleOpenCloseMenu = (e: React.MouseEvent) => {

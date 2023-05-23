@@ -5,12 +5,12 @@ const { setting } = data;
 
 const {
   data: {
-    attributes: { menuLink, blogName, logo },
+    attributes: { blogName },
   },
 } = setting;
 
 export default {
   blogName,
-  menuLink,
-  logo,
+  menuLink: data.setting.data.attributes.menuLink,
+  logo: data.setting.data.attributes.logo,
 } as unknown as MenuProps;

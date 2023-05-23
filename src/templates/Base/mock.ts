@@ -2,6 +2,6 @@ import { BaseTemplateProps } from '.';
 import { data } from '../../api/data.json';
 
 export default {
-  settings: data.setting.data,
+  settings: data.setting.data.attributes,
   children: 'olá mundo',
-} as BaseTemplateProps;
+} as unknown as BaseTemplateProps;

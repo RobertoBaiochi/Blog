@@ -1,7 +1,9 @@
 export type LogoStrapi = {
-  id: number;
-  attributes: {
-    alternativeText: string;
-    url: string;
+  data: {
+    id: number;
+    attributes: {
+      alternativeText: string;
+      url: string;
+    };
   };
 };
