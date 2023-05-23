@@ -19,7 +19,7 @@ const ArticleHeader = ({
   categories,
   createdAt,
 }: ArticleHeaderProps) => {
-  const { alternativeText, url } = cover.data[0].attributes;
+  const { alternativeText, url } = cover[0].attributes;
   return (
     <Wrapper>
       <Heading as="h3" size="big">

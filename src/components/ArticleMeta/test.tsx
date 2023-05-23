@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
 import ArticleMeta, { ArticleMetaProps } from '.';
@@ -10,9 +11,7 @@ const props: ArticleMetaProps = mock;
 describe('<ArticleMeta />', () => {
   it('should render author and category links', () => {
     renderTheme(<ArticleMeta {...props} />);
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const { displayName, slug } = props.categories![0].attributes;
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const { displayName: authorName, slug: authorSlug } =
       props.author!.attributes;
 

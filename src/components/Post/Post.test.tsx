@@ -12,7 +12,7 @@ describe('<Post />', () => {
   it('should render header, excerpt, cover, metadata and post', () => {
     renderTheme(<Post {...props} />);
     const { title, createdAt, excerpt, cover } = props;
-    const { alternativeText } = cover.data[0].attributes;
+    const { alternativeText } = cover[0].attributes;
 
     expect(screen.getByRole('heading', { name: title })).toBeInTheDocument();
     expect(
